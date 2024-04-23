@@ -1,0 +1,119 @@
+[
+    {
+        "installations": [
+            {
+                "calibration_date": "2021-11-22",
+                "calibration_file": "",
+                "filename_prefix": "mpp_fm",
+                "location_long": "Foremast",
+                "location_short": "fm",
+                "notes": "",
+                "serial_numbers": {
+                    "anemometer": "20100008",
+                    "bracket": "20100024",
+                    "hydroclip": "20269221"
+                }
+            },
+            {
+                "calibration_date": "",
+                "filename_prefix": "mpp_wh_stb",
+                "location_long": "Wheelhouse Top Starboard Side",
+                "location_short": "wh_stb",
+                "notes": "",
+                "serial_numbers": {
+                    "anemometer": "",
+                    "bracket": "217460023",
+                    "hydroclip": "20269221"
+                }
+            }
+        ],
+        "label": "Gill MetPak Pro Weather Station",
+        "soi_device": "mpp"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2021-10-08",
+                "calibration_file": "",
+                "filename_prefix": "met4_fm",
+                "location_long": "Foremast",
+                "location_short": "fm",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "153542"
+                }
+            }
+        ],
+        "label": "Paroscientific Met4",
+        "soi_device": "met4"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2022-04-19",
+                "calibration_file": "",
+                "filename_prefix": "par_fm",
+                "location_long": "Foremast",
+                "location_short": "fm",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "20613"
+                }
+            }
+        ],
+        "label": "Biospherical Instruments QSR 2200 surface reference radiometer",
+        "soi_device": "par"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2020-12-10",
+                "calibration_file": "",
+                "filename_prefix": "rad_fm",
+                "location_long": "Foremast",
+                "location_short": "fm",
+                "notes": "",
+                "serial_numbers": {
+                    "IR Radiometer": "389613",
+                    "Pyranometer": "38990F3"
+                }
+            }
+        ],
+        "label": " ",
+        "soi_device": "rad"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2022-05-28",
+                "calibration_file": "",
+                "filename_prefix": "windsonic_fm",
+                "location_long": "Foremast",
+                "location_short": "fm",
+                "notes": "mounted 180 degrees out of North mark",
+                "serial_numbers": {
+                    "unit": "224900005"
+                }
+            }
+        ],
+        "label": "Gill Windsonic anemometer",
+        "soi_device": "windsonic"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2022-07-18",
+                "calibration_file": "",
+                "filename_prefix": "raingauge_fm",
+                "location_long": "Foremast",
+                "location_short": "fm",
+                "notes": "output set for WMO codes",
+                "serial_numbers": {
+                    "unit": "22080547"
+                }
+            }
+        ],
+        "label": "OSi APG-815 Optical Rain Gauge",
+        "soi_device": "raingauge"
+    }
+]
