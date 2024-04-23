@@ -1,0 +1,29 @@
+[
+    {
+        "installations": [
+            {
+                "calibration_date": " ",
+                "calibration_file": "",
+                "filename_prefix": "tsg_sbe45_1",
+                "location_long": "Flowthrough seawater system, primary",
+                "location_short": "1",
+                "notes": "",
+                "serial_numbers": {
+                    "unit":""
+                }
+            },
+            {
+                "calibration_date": "",
+                "filename_prefix": "tsg_sbe45_2",
+                "location_long": "Flowthrough seawater system, secondary",
+                "location_short": "2",
+                "notes": "",
+                "serial_numbers": {
+                    "unit":""
+                }
+            }
+        ],
+        "label": "Sea-Bird SBE-45 TSG (Thermosalinograph)",
+        "soi_device": "tsg_sbe45"
+    }
+]

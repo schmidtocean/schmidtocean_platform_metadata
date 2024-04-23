@@ -1,0 +1,352 @@
+[
+    {
+        "alternative_label": "WET Labs ECO FL",
+        "definition": "An open flat-face fluorometer that can be used to measure relative chlorophyll, CDOM, uranine, phycocyanin, or phycoerythrin concentrations by directly measuring the amount of fluorescence emission in a sample volume of water.",
+        "example_output": "$FLUO,99-99-99,99:99:99,0.88,695,166,530*0F",
+        "fields": [
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Fluorescence",
+                "description": "",
+                "header_label": "ChlSig_ug/l",
+                "label": "fluor",
+                "range": [
+                    0,
+                    125
+                ],
+                "resolution": 0.02,
+                "type": "dervied",
+                "units": "ug/l",
+                "units_long": "micro grams per liter",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Wavelength",
+                "description": "",
+                "header_label": "NU",
+                "label": "wavelength",
+                "range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "nm",
+                "units_long": "nanometers",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Raw Counts",
+                "description": "",
+                "header_label": "ChlSigRaw",
+                "label": "raw_counts",
+                "range": [],
+                "resolution": "Nan",
+                "type": "measured",
+                "units": "count",
+                "units_long": "count",
+                "uri": ""
+            }
+        ],
+        "file_header": "Timestamp,Date,Time,ChlSig_ug/l,NU,ChlSigRaw,Therm*CheckSum",
+        "filename": "{cruise_id}_fluorometer_{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL0172",
+        "instrument_type": "fluorometer",
+        "label": "WET Labs ECO FL Fluorometer",
+        "manual_link": "https://www.seabird.com/asset-get.download.jsa?id=67383560051",
+        "parser": "{timestamp:S},{Date:S}\t{Time:S}\t{ChlSig:g}\t{NU:d}\t{ChlSigRaw:d}\t{Therm:d}",
+        "permit_parameters": [
+            "fluorescence"
+        ],
+        "soi_device": "fluorometer",
+        "uri": "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0172/"
+    },
+    {
+        "alternative_label": "SBE 45 MicroTSG",
+        "definition": "A small externally powered, high-accuracy instrument, designed for shipboard determination of sea surface (pumped-water) conductivity and temperature. It is constructed of plastic and titanium to ensure long life with minimum maintenance. It may optionally be interfaced to an external SBE 38 hull temperature sensor.",
+        "example_output": "07/09/2019,17:45:02.659,t1= 17.4134, c1= 4.21067, s= 32.2437, sv=1509.149, t2= 16.8268",
+        "fields": [
+            {
+                "accuracy": 0.002,
+                "alternative_label": "temperature1",
+                "description": "Temperature from primary sensor",
+                "header_label": "Temperature1",
+                "label": "Primary Temperature",
+                "range": [
+                    -5,
+                    35
+                ],
+                "resolution": 0.0001,
+                "type": "measured",
+                "units": "deg C",
+                "units_long": "Degrees Celcius",
+                "uri": ""
+            },
+            {
+                "accuracy": 0.0003,
+                "alternative_label": "conductivity",
+                "description": "Conductivity from primary sensor",
+                "header_label": "Conductivity",
+                "label": "Conductivity",
+                "range": [
+                    0,
+                    7
+                ],
+                "resolution": 0.00001,
+                "type": "measured",
+                "units": "S/m",
+                "units_long": "S/m"
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Salinity",
+                "description": "Salinity derived from t1 and t2",
+                "header_label": "Salinity",
+                "label": "Salinity",
+                "range": [],
+                "resolution": "NaN",
+                "type": "derived",
+                "units": "PSU",
+                "units_long": "Practical Salinity Units"
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Sound Velocity",
+                "description": "Sound velocity derived from t1 and t2",
+                "header_label": "SoundVelocity",
+                "label": "Sound Velocity",
+                "range": [],
+                "resolution": "NaN",
+                "type": "derived",
+                "units": "m/s",
+                "units_long": "Meters per second"
+            },
+            {
+                "accuracy": 0.001,
+                "alternative_label": "temperature2",
+                "description": "Temperature from secondary sensor",
+                "header_label": "Temperature2",
+                "label": "Secondary Temperature",
+                "range": [
+                    -5,
+                    35
+                ],
+                "resolution": 0.0001,
+                "sensor": "sbe38",
+                "type": "measured",
+                "units": "deg C",
+                "units_long": "Degrees Celcius",
+                "uri": ""
+            }
+        ],
+        "file_header": "Timestamp,t1=Temperature1_C, c1=Conductivity_S/m, s=Salinity_PSU, sv=SoundVelocity_m/s, t2=SBE38_Temperature_C",
+        "filename": "{cruise_id}_tsg_{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL0190",
+        "instrument_type": "thermosalinograph",
+        "label": "Sea-Bird SBE-45 TSG (Thermosalinograph)",
+        "manual_link": "http://www.seabird.com/sbe45-thermosalinograph",
+        "parser": "{timestamp:S},t1= {Temperature1:g}, c1= {Conductivity:g}, s= {Salinity:g}, sv={SoundVelocity:g}, t2= {Temperature2:g}",
+        "permit_parameters": ["temperature", "conductivity"],
+        "soi_device": "tsg_sbe45",
+        "uri": "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0190/"
+    },
+    {
+        "alternative_label": "Sunburst AFT pH",
+        "definition": "Instruments that measure the hydrogen ion concentration in the water column",
+        "example_output": "11/19/2019,20:12:49.822,$SBSPH,323.8417,26.75,35.00,8.0376,11.23,2019-11-19,20:12:01",
+        "fields": [
+            {
+                "accuracy": 0.003,
+                "alternative_label": "pH",
+                "description": "",
+                "header_label": "pH",
+                "label": "pH",
+                "range": [
+                    7,
+                    9
+                ],
+                "resolution": 0.001,
+                "type": "measured",
+                "units": "pH",
+                "units_long": "pH",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "salnity",
+                "description": "",
+                "header_label": "Salinity_Constant",
+                "label": "Salnity",
+                "range": [],
+                "resolution": 0.01,
+                "type": "Constant",
+                "units": "PSU",
+                "units_long": "Pratical Salinity Units",
+                "uri": ""
+            },
+            {
+                "accuracy": 0.1,
+                "alternative_label": "temperature",
+                "description": "",
+                "header_label": "Temperature_C",
+                "label": "Temperature",
+                "range": [],
+                "resolution": 0.01,
+                "type": "measured",
+                "units": "deg C",
+                "units_long": "Degrees Celcius",
+                "uri": ""
+            },
+            {
+                "accuracy": "Nan",
+                "alternative_label": "voltage",
+                "description": "",
+                "header_label": "Battery_Voltage",
+                "label": "Voltage",
+                "range": [],
+                "resolution": "Nan",
+                "type": "measured",
+                "units": "deg C",
+                "units_long": "",
+                "uri": ""
+            }
+        ],
+        "file_header": "Timestamp,Header,Year_Day,Temperature_C,Salinity_Constant,pH,Battery_Voltage,Date,Time",
+        "filename": "{cruise_id}_pH_sunburst_{num}-%Y-%m-%d.txt",
+        "identifier": "",
+        "instrument_type": "pH sensors",
+        "label": "Sunburst AFT pH",
+        "manual_link": "http://www.sunburstsensors.com/products/oceanographic-ph-sensor-benchtop.html",
+        "parser": "{timestamp:S},$SBSPH,{InstrumentYearDay:g},{Temperature:g},{SalinityConstant:g},{pH:g},{BatteryVoltage:g},{InstrumentDate:S},{InstrumentTime:S}",
+        "permit_parameters": ["pH'"],
+        "soi_device": "sunburst_pH",
+        "uri": " "
+    },
+    {
+        "alternative_label": "Valeport MiniSVS",
+        "definition": "A sound velocity profiler used to measure the speed of sound in water. Each sound velocity measurement is made using a single pulse of sound traveling over a known distance. It uses Valeport's digital time of flight technology to provide accurate, low noise, low resolution data. The miniSVS has RS232 and RS485 output. RS232 data may be taken over cables up to 200 m long, whereas RS485 is suitable for longer cables (up to 1000 m), and allows for multiple addressed units on a single cable. The miniSVS may be optionally supplied with either a pressure or temperature sensor (but not both), and is available in a variety of sizes; 100 mm, 50 mm and 25 mm. It measures sound velocity over the range 1375-1900 m/s in water temperatures ranging from -5 to +35 degC. It is depth rated to 6000 m. Its accuracy is dependent on the sensor size chosen, and has a resolution of 0.001 m/s.",
+        "example_output": "2023-12-01T21:02:54.793533Z, 1537.366",
+        "fields": [
+            {
+                "accuracy": 0.17,
+                "alternative_label": "Sound Velocity",
+                "description": "",
+                "header_label": "SoundVelocity",
+                "label": "sound_veolocty",
+                "range": [
+                    1375,
+                    1900
+                ],
+                "resolution": 0.001,
+                "type": "measured",
+                "units": "m/s",
+                "units_long": "Meters per Second",
+                "uri": ""
+            }
+        ],
+        "file_header": "Timestamp,SoundVelocity_m/s",
+        "filename": "{cruise_id}_    _{num}-%Y-%m-%d.txt",
+        "identifier": "L22::TOOL1495",
+        "instrument_type": "Sound Speed Velocimeter",
+        "label": "Valeport MiniSVS SSV (Sound Speed Velocimeter)",
+        "manual_link": "",
+        "parser": "{timestamp:S},{SoundVelocity:g}",
+        "permit_parameters": ["sound veloicty"],
+        "soi_device": "minisvs",
+        "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL1495/"
+    },
+    {
+        "alternative_label": "WET Labs C-Star transmissometer",
+        "definition": "An underwater optical beam transmissometer capable of free-space measurements or mounting in a flow tube with a pump for underway or moored applications. It is available in a variety of wavelengths, typically red, blue or green, with a path length of 10 or 25 cm, and in deep or shallow options.",
+        "example_output": "2023-12-09T00:00:00.186544Z,CST-2187DR 09562 12175 14958 00.131 525",
+        "fields": [
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Serial Num",
+                "description": "serial number of instrument",
+                "header_label": "SerialNum",
+                "label": "Serial Number",
+                "range": [],
+                "resolution": "Nan",
+                "type": "constant",
+                "units": "",
+                "units_long": " ",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "ref raw count",
+                "description": "",
+                "header_label": "ReferenceRawCount",
+                "label": "Reference Raw Count",
+                "range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "count",
+                "units_long": "count",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Sig Raw Count",
+                "description": "",
+                "header_label": "SignalRawCount",
+                "label": "Signal Raw Count",
+                "range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "count",
+                "units_long": "count",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Corr Sig Raw Count",
+                "description": "",
+                "header_label": "CorrectedSignalRawCount",
+                "label": "Corrected Signal Raw Count",
+                "range": [],
+                "resolution": "NaN",
+                "type": "derived",
+                "units": "count",
+                "units_long": " ",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Calc Bean Atten Coef",
+                "description": "",
+                "header_label": "CalcBeamAttenCoef_1/m",
+                "label": "Calculated Bean Attenutation Coeffecient",
+                "range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "1/m",
+                "units_long": "per meter",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Thermistor Raw Count",
+                "description": "",
+                "header_label": "ThermistorRawCount",
+                "label": "Thermistor Raw Count",
+                "range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "count",
+                "units_long": "count",
+                "uri": ""
+            }
+        ],
+        "file_header": "Timestamp,SerialNum ReferenceRawCount SignalRawCount CorrectedSignalRawCount CalcBeamAttenCoef_1/m ThermistorRawCount",
+        "filename": "{cruise_id}_transmissometer_{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL0160",
+        "instrument_type": "transmissometer",
+        "label": "WET Labs (Sea-Bird WETLabs) C-Star transmissometer",
+        "manual_link": "https://www.seabird.com/c-star-transmissometer/product?id=60762467717",
+        "parser": "{timestamp:S},CST-{SN:S}\t{RefCount:g}\t{SigCount:g}\t{CorrSigCount:g}\t{CalcBeams:g}\t{Therm:g}",
+        "permit_parameters": ["transmissivity"],
+        "soi_device": "sbe_cst",
+        "uri": "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0160/"
+    }
+]

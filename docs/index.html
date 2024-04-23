@@ -5,10 +5,14 @@
   <style>
 
 body{
-   
+    background-color: black;
+    color:antiquewhite;
+    font-size: larger;
+   padding: 10px;
+   margin:10px;
     }
 .main{
-    height: 100vh;
+    height: 90vh;
 
   display: flex;
   flex-direction: row;
@@ -19,15 +23,52 @@ body{
 iframe{
     flex-grow:1 ; 
 }
+
+label, header{
+    padding: 5px;
+}
   </style>
 </head>
 
  
  <body>
+    <header> SOI Platform Metadata</header>
+    <label for="platform-select">System</label>
+
+    <select id="platform-select">
+      <option value="">--Please choose an option--</option>
+      <option value="seawater">Seawater</option>
+      <option value="met">Meteorological</option>
+      <!-- <option value="sub">ROV SuBastian</option> -->
+    
+    </select>
     <div class = "main">
 
+
     <iframe id="devices" src="https://jsoncrack.com/widget?json=https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_sensors.json" ></iframe>
-    <iframe id="instalations" src="https://jsoncrack.com/widget?json=https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_installations.json"></iframe>
+    <iframe id="installations" src="https://jsoncrack.com/widget?json=https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_installations.json"></iframe>
 </div>
+
+<script>
+    const selectElement = document.querySelector("#platform-select");
+    const devices = document.querySelector("#devices");
+    const installations = document.querySelector("#installations");
+    const switch_list = {
+                        "met":["https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_sensors.json","https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_installations.json"] ,
+                        "seawater":["https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_sensors.json","https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_installations.json"],
+                        "sub":["https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_sensors.json","https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_installations.json"]
+                      
+                    }
+
+    selectElement.addEventListener("change", (event) => {
+        d = switch_list[event.target.value][0]
+        i = switch_list[event.target.value][1]
+        textout_d = "https://jsoncrack.com/widget?json=" + d
+        textout_i = "https://jsoncrack.com/widget?json=" + i
+        devices.src = textout_d
+        installations.src = textout_i
+        // result.textContent = `You like ${event.target.value}`;
+    });
+</script>
 </body>
 </html>
