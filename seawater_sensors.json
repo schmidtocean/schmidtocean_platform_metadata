@@ -139,7 +139,7 @@
             }
         ],
         "file_header": "Timestamp,t1=Temperature1_C, c1=Conductivity_S/m, s=Salinity_PSU, sv=SoundVelocity_m/s, t2=SBE38_Temperature_C",
-        "filename": "{cruise_id}_tsg_{num}-%Y-%m-%d.txt",
+        "filename": "{cruise_id}_tsg_sbe45_{num}-%Y-%m-%d.txt",
         "identifier": "SDN:L22::TOOL0190",
         "instrument_type": "thermosalinograph",
         "label": "Sea-Bird SBE-45 TSG (Thermosalinograph)",

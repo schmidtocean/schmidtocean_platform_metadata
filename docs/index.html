@@ -17,8 +17,22 @@ body{
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-   flex-grow:1 ;
+
   
+}
+.titles{
+    display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+ font-weight: lighter;
+}
+
+.w{flex-grow:1 ;
+
+    margin: 10px;
+
 }
 iframe{
     flex-grow:1 ; 
@@ -26,6 +40,7 @@ iframe{
 
 label, header{
     padding: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
   </style>
 </head>
@@ -36,12 +51,15 @@ label, header{
     <label for="platform-select">System</label>
 
     <select id="platform-select">
-      <option value="">--Please choose an option--</option>
+        <option value="met">Meteorological</option>
       <option value="seawater">Seawater</option>
-      <option value="met">Meteorological</option>
+      
       <!-- <option value="sub">ROV SuBastian</option> -->
     
     </select>
+    <div class = "titles">
+    <div class="w">Devices</div><div class="w">Installations</div>
+    </div>
     <div class = "main">
 
 
@@ -54,7 +72,7 @@ label, header{
     const devices = document.querySelector("#devices");
     const installations = document.querySelector("#installations");
     const switch_list = {
-                        "met":["https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_sensors.json","https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_installations.json"] ,
+                        "met":["https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_sensors.json","https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_installations.json"],
                         "seawater":["https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_sensors.json","https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_installations.json"],
                         "sub":["https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_sensors.json","https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_installations.json"]
                       
@@ -65,8 +83,8 @@ label, header{
         i = switch_list[event.target.value][1]
         textout_d = "https://jsoncrack.com/widget?json=" + d
         textout_i = "https://jsoncrack.com/widget?json=" + i
-        devices.src = textout_d
-        installations.src = textout_i
+        devices.src = textout_d;
+        installations.src = textout_i;
         // result.textContent = `You like ${event.target.value}`;
     });
 </script>
