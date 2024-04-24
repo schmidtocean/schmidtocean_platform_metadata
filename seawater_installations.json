@@ -2,28 +2,148 @@
     {
         "installations": [
             {
-                "calibration_date": " ",
+                "calibration_date":  {
+                    "sbe45":"2022-05-15",
+                    "sbe38":"2022-03-03"
+                },
                 "calibration_file": "",
                 "filename_prefix": "tsg_sbe45_1",
                 "location_long": "Flowthrough seawater system, primary",
                 "location_short": "1",
                 "notes": "",
                 "serial_numbers": {
-                    "unit":""
+                    "sbe45": "0800",
+                    "sbe38": "0680"
                 }
             },
             {
-                "calibration_date": "",
+                "calibration_date": {
+                    "sbe45":"2022-05-03",
+                    "sbe38":"2022-03-03"
+                },
                 "filename_prefix": "tsg_sbe45_2",
                 "location_long": "Flowthrough seawater system, secondary",
                 "location_short": "2",
                 "notes": "",
                 "serial_numbers": {
-                    "unit":""
+                    "sb349": "0799",
+                    "sbe38": "0655"
                 }
             }
         ],
         "label": "Sea-Bird SBE-45 TSG (Thermosalinograph)",
         "soi_device": "tsg_sbe45"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2022-03-01",
+                "calibration_file": "",
+                "filename_prefix": "fluorometer_1",
+                "location_long": "Flowthrough seawater system, primary",
+                "location_short": "1",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "4906"
+                }
+            },
+            {
+                "calibration_date": "2022-04-01",
+                "calibration_file": "",
+                "filename_prefix": "fluorometer_2",
+                "location_long": "Flowthrough seawater system, secondary",
+                "location_short": "2",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "7472"
+                }
+            }
+        ],
+        "label": "WET Labs ECO FL Fluorometer",
+        "soi_device": "fluorometer"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": " 2021-01-11",
+                "calibration_file": "",
+                "filename_prefix": "",
+                "location_long": "Flowthrough seawater system, primary",
+                "location_short": "1",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "AP0013"
+                }
+            },
+            {
+                "calibration_date": " ",
+                "calibration_file": "",
+                "filename_prefix": "",
+                "location_long": " ",
+                "location_short": " ",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": " "
+                }
+            }
+        ],
+        "label": "Sunburst AFT pH",
+        "soi_device": "pH"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2022-04-08",
+                "calibration_file": "",
+                "filename_prefix": "transmissometer_1",
+                "location_long": "Flowthrough seawater system, primary",
+                "location_short": "1",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "2187"
+                }
+            },
+            {
+                "calibration_date": "2022-03-31",
+                "calibration_file": "",
+                "filename_prefix": "transmissometer_2",
+                "location_long": "Flowthrough seawater system,secondary",
+                "location_short": "2",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "2186"
+                }
+            }
+        ],
+        "label": "",
+        "soi_device": "transmissometer"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": "2022-03-16",
+                "calibration_file": "",
+                "filename_prefix": "",
+                "location_long": " ",
+                "location_short": "aft",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "35821"
+                }
+            },
+            {
+                "calibration_date": "2022-02-24",
+                "calibration_file": "",
+                "filename_prefix": "",
+                "location_long": " ",
+                "location_short": "fwd",
+                "notes": "",
+                "serial_numbers": {
+                    "unit": "44486"
+                }
+            }
+        ],
+        "label": "Valeport MiniSVS SSV (Sound Speed Velocimeter)",
+        "soi_device": "minisvs"
     }
 ]

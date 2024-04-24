@@ -10,7 +10,7 @@
                 "description": "",
                 "header_label": "ChlSig_ug/l",
                 "label": "fluor",
-                "range": [
+                "instrument_range": [
                     0,
                     125
                 ],
@@ -26,7 +26,7 @@
                 "description": "",
                 "header_label": "NU",
                 "label": "wavelength",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "nm",
@@ -39,7 +39,7 @@
                 "description": "",
                 "header_label": "ChlSigRaw",
                 "label": "raw_counts",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "Nan",
                 "type": "measured",
                 "units": "count",
@@ -71,7 +71,7 @@
                 "description": "Temperature from primary sensor",
                 "header_label": "Temperature1",
                 "label": "Primary Temperature",
-                "range": [
+                "instrument_range": [
                     -5,
                     35
                 ],
@@ -87,7 +87,7 @@
                 "description": "Conductivity from primary sensor",
                 "header_label": "Conductivity",
                 "label": "Conductivity",
-                "range": [
+                "instrument_range": [
                     0,
                     7
                 ],
@@ -102,7 +102,7 @@
                 "description": "Salinity derived from t1 and t2",
                 "header_label": "Salinity",
                 "label": "Salinity",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "derived",
                 "units": "PSU",
@@ -114,7 +114,7 @@
                 "description": "Sound velocity derived from t1 and t2",
                 "header_label": "SoundVelocity",
                 "label": "Sound Velocity",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "derived",
                 "units": "m/s",
@@ -123,31 +123,29 @@
             {
                 "accuracy": 0.001,
                 "alternative_label": "temperature2",
-                "description": "Temperature from secondary sensor",
+                "description": "Temperature from Sea-Bird SBE 38 thermometer",
                 "header_label": "Temperature2",
                 "label": "Secondary Temperature",
-                "range": [
+                "instrument_range": [
                     -5,
                     35
                 ],
                 "resolution": 0.0001,
-                "sensor": "sbe38",
                 "type": "measured",
                 "units": "deg C",
-                "units_long": "Degrees Celcius",
-                "uri": ""
+                "units_long": "Degrees Celcius"
             }
         ],
         "file_header": "Timestamp,t1=Temperature1_C, c1=Conductivity_S/m, s=Salinity_PSU, sv=SoundVelocity_m/s, t2=SBE38_Temperature_C",
         "filename": "{cruise_id}_tsg_sbe45_{num}-%Y-%m-%d.txt",
-        "identifier": "SDN:L22::TOOL0190",
+        "identifier": ["SDN:L22::TOOL0190","SDN:L22::TOOL0191"],
         "instrument_type": "thermosalinograph",
         "label": "Sea-Bird SBE-45 TSG (Thermosalinograph)",
         "manual_link": "http://www.seabird.com/sbe45-thermosalinograph",
         "parser": "{timestamp:S},t1= {Temperature1:g}, c1= {Conductivity:g}, s= {Salinity:g}, sv={SoundVelocity:g}, t2= {Temperature2:g}",
         "permit_parameters": ["temperature", "conductivity"],
         "soi_device": "tsg_sbe45",
-        "uri": "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0190/"
+        "uri": ["https://vocab.nerc.ac.uk/collection/L22/current/TOOL0190/","http://vocab.nerc.ac.uk/collection/L22/current/TOOL0191/"]
     },
     {
         "alternative_label": "Sunburst AFT pH",
@@ -160,7 +158,7 @@
                 "description": "",
                 "header_label": "pH",
                 "label": "pH",
-                "range": [
+                "instrument_range": [
                     7,
                     9
                 ],
@@ -176,7 +174,7 @@
                 "description": "",
                 "header_label": "Salinity_Constant",
                 "label": "Salnity",
-                "range": [],
+                "instrument_range": [],
                 "resolution": 0.01,
                 "type": "Constant",
                 "units": "PSU",
@@ -189,7 +187,7 @@
                 "description": "",
                 "header_label": "Temperature_C",
                 "label": "Temperature",
-                "range": [],
+                "instrument_range": [],
                 "resolution": 0.01,
                 "type": "measured",
                 "units": "deg C",
@@ -202,7 +200,7 @@
                 "description": "",
                 "header_label": "Battery_Voltage",
                 "label": "Voltage",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "Nan",
                 "type": "measured",
                 "units": "deg C",
@@ -223,7 +221,7 @@
     },
     {
         "alternative_label": "Valeport MiniSVS",
-        "definition": "A sound velocity profiler used to measure the speed of sound in water. Each sound velocity measurement is made using a single pulse of sound traveling over a known distance. It uses Valeport's digital time of flight technology to provide accurate, low noise, low resolution data. The miniSVS has RS232 and RS485 output. RS232 data may be taken over cables up to 200 m long, whereas RS485 is suitable for longer cables (up to 1000 m), and allows for multiple addressed units on a single cable. The miniSVS may be optionally supplied with either a pressure or temperature sensor (but not both), and is available in a variety of sizes; 100 mm, 50 mm and 25 mm. It measures sound velocity over the range 1375-1900 m/s in water temperatures ranging from -5 to +35 degC. It is depth rated to 6000 m. Its accuracy is dependent on the sensor size chosen, and has a resolution of 0.001 m/s.",
+        "definition": "A sound velocity profiler used to measure the speed of sound in water. Each sound velocity measurement is made using a single pulse of sound traveling over a known distance. It uses Valeport's digital time of flight technology to provide accurate, low noise, low resolution data. The miniSVS has RS232 and RS485 output. RS232 data may be taken over cables up to 200 m long, whereas RS485 is suitable for longer cables (up to 1000 m), and allows for multiple addressed units on a single cable. The miniSVS may be optionally supplied with either a pressure or temperature sensor (but not both), and is available in a variety of sizes; 100 mm, 50 mm and 25 mm. It measures sound velocity over the instrument_range 1375-1900 m/s in water temperatures ranging from -5 to +35 degC. It is depth rated to 6000 m. Its accuracy is dependent on the sensor size chosen, and has a resolution of 0.001 m/s.",
         "example_output": "2023-12-01T21:02:54.793533Z, 1537.366",
         "fields": [
             {
@@ -232,7 +230,7 @@
                 "description": "",
                 "header_label": "SoundVelocity",
                 "label": "sound_veolocty",
-                "range": [
+                "instrument_range": [
                     1375,
                     1900
                 ],
@@ -265,7 +263,7 @@
                 "description": "serial number of instrument",
                 "header_label": "SerialNum",
                 "label": "Serial Number",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "Nan",
                 "type": "constant",
                 "units": "",
@@ -278,7 +276,7 @@
                 "description": "",
                 "header_label": "ReferenceRawCount",
                 "label": "Reference Raw Count",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "count",
@@ -291,7 +289,7 @@
                 "description": "",
                 "header_label": "SignalRawCount",
                 "label": "Signal Raw Count",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "count",
@@ -304,7 +302,7 @@
                 "description": "",
                 "header_label": "CorrectedSignalRawCount",
                 "label": "Corrected Signal Raw Count",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "derived",
                 "units": "count",
@@ -317,7 +315,7 @@
                 "description": "",
                 "header_label": "CalcBeamAttenCoef_1/m",
                 "label": "Calculated Bean Attenutation Coeffecient",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "1/m",
@@ -330,7 +328,7 @@
                 "description": "",
                 "header_label": "ThermistorRawCount",
                 "label": "Thermistor Raw Count",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "count",

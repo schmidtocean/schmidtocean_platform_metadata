@@ -11,7 +11,7 @@
                 "description": "",
                 "header_label":"WindDir_deg",
                 "label": "Relative Wind Direction",
-                "range": [
+                "instrument_range": [
                     0,
                     359
                 ],
@@ -27,7 +27,7 @@
                 "description": "",
                 "header_label":"WindSpd_m/s",
                 "label": "Relative Wind Speed",
-                "range": [],
+                "instrument_range": [],
                 "resolution": 0.01,
                 "type": "measured",
                 "units": "m/s",
@@ -40,7 +40,7 @@
                 "description": "",
                 "label": "Air Pressure",
                 "header_label":"AirPres_hPa",
-                "range": [
+                "instrument_range": [
                     600,
                     1100
                 ],
@@ -56,7 +56,7 @@
                 "description": "",
                 "header_label":"Humidity_%",
                 "label": "Humidity",
-                "range": [],
+                "instrument_range": [],
                 "resolution": 0.1,
                 "type": "measured",
                 "units": "%",
@@ -69,7 +69,7 @@
                 "description": "",
                 "header_label":"AirTemp_C",
                 "label": "Air Temperature",
-                "range": [
+                "instrument_range": [
                     50,
                     100
                 ],
@@ -85,7 +85,7 @@
                 "description": "",
                 "header_label":"DewPoint",
                 "label": "humidity",
-                "range": [
+                "instrument_range": [
                     50,
                     100
                 ],
@@ -118,7 +118,7 @@
                 "description": "",
                 "header_label":"AirPres_hPa",
                 "label": "Air Pressure",
-                "range": [],
+                "instrument_range": [],
                 "resolution": 0.1,
                 "type": "measured",
                 "units": "hPa",
@@ -131,7 +131,7 @@
                 "description": "",
                 "header_label":"Humidity_%",
                 "label": "Humidity",
-                "range": [],
+                "instrument_range": [],
                 "resolution": 0.1,
                 "type": "measured",
                 "units": "%",
@@ -144,7 +144,7 @@
                 "description": "",
                 "header_label":"AirTemp_C",
                 "label": "Air Temperature",
-                "range": [
+                "instrument_range": [
                     50,
                     100
                 ],
@@ -167,7 +167,7 @@
     },
     {
         "alternative_label": "Biospherical QSR-2200",
-        "definition": "A surface reference radiometer to measure scalar irradiance from sunlight with a PAR response. These sensors are often used on ships during on-deck incubations, or while a QSP sensor is vertically profiling, for example, when mounted on a CTD. The QSR-2200 outputs a linear analog signal and is compatible with data loggers that can accept a wide range of signal voltages. QSR sensors are equipped with a detachable field-of-view cutoff shield to limit its response to light from the upper hemisphere (2 &pi; steradians).",
+        "definition": "A surface reference radiometer to measure scalar irradiance from sunlight with a PAR response. These sensors are often used on ships during on-deck incubations, or while a QSP sensor is vertically profiling, for example, when mounted on a CTD. The QSR-2200 outputs a linear analog signal and is compatible with data loggers that can accept a wide instrument_range of signal voltages. QSR sensors are equipped with a detachable field-of-view cutoff shield to limit its response to light from the upper hemisphere (2 &pi; steradians).",
         "instrument_type": "radiometer",
         "example_output": "",
         "fields": [
@@ -176,7 +176,7 @@
                 "alternative_label": "Voltage",
                 "description": "",
                 "label": " ",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "V",
@@ -193,8 +193,8 @@
         "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL2017/"
     },
     {
-        "alternative_label": "Eppley PSP/PIR Radiometers",
-        "definition": "",
+        "alternative_label": "Eppley SPP/PIR Radiometers",
+        "definition": "This systems is composed of the Eppley PIR and Eppley SPP. The Eppley Precision Infrared Radiometer (PIR) pyrgeometer measures longwave (infrared) radiation. It is housed in a weatherproof titanium canister that has been painted with a very flat black paint that absorbs radiation. A small glass dome at the top of the instrument is covered with an 'interference coating' which allows only infrared radiation to come through. Light levels are detected as temperature changes creating voltages in fine wire coil detectors. A precision radiometer used to measure total energy from the sun. This can be either global shortwave irradiance or total irradiance in the plane of array (TPA). It can also be used to measure reflected or albedo irradiance, as well as diffuse shortwave irradiance. It is based on the design of the Eppley PSP pyranometer (https://vocab.nerc.ac.uk/collection/L22/current/TOOL0666/) but exhibits a faster response time, reduced thermal offset and improved cosine response. The SPP has a spectral range from 295-2800 nm, a sensitivity of 8 uV / Wm-2 and an impedance of approximately 700 ohms. It has an operating temperature from -50 to +80 degC. Hourly average measurement uncertainty is approximately 2 percent, daily average measurement uncertainty is approximately 1 percent.",
         "instrument_type": "radiometer",
         "example_output": "2023-12-01T21:03:11.040268Z,$WIR39,23/12/01,21:15:40, 175, -208.5, 440.54, 33.03, 32.44, 364.47, 39.9, 10.0",
         "fields": [
@@ -204,12 +204,11 @@
                 "description": "long wave raditation",
                 "header_label": "LW_Wm-2",
                 "label": "Long Wave Irradance",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "W/m2",
-                "units_long": "Watts per meter squared",
-                "uri": ""
+                "units_long": "Watts per meter squared"
             },
             {
                 "accuracy": "0.9%",
@@ -217,23 +216,22 @@
                 "description": "short wave readtiation",
                 "header_label":"SW_Wm-2",
                 "label": "Short Wave Irradiance",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "W/m2",
-                "units_long": "Watts per meter squared",
-                "uri": ""
+                "units_long": "Watts per meter squared"
             }
         ],
         "filename": "{cruise_id}_rad_{location}-%Y-%m-%d.txt",
         "file_header":"Timestamp,Header,InstrumentDate,InstrumentTime,Samples,PIR_mV,LW_Wm-2,CaseTemp_C,DomeTemp_C,SW_Wm-2,BoardTemp_C,BattVoltage_V",
-        "identifier": "",
-        "label": "",
+        "identifier": ["SDN:L22::TOOL0083","SDN:L22::TOOL2020"],
+        "label": "Eppley SPP/PIR Radiometers",
         "manual_link": "",
         "parser": "{timestamp:S},$WIR39,{InstrumentDate:S},{InstrumentTime:S}, {Samples:od}, {PIR:og}, {LW:og}, {CaseTemp:og}, {DomeTemp:og}, {SW:og}, {BoardTemp:og}, {BattVoltage:og}",
        "permit_parameters":["global shortwave radiation","global longwave radiation"],
         "soi_device": "rad",
-        "uri": " "
+        "uri": ["http://vocab.nerc.ac.uk/collection/L22/current/TOOL0083/","http://vocab.nerc.ac.uk/collection/L22/current/TOOL2020/"]
     },
     {
         "alternative_label": "Windsonic",
@@ -247,7 +245,7 @@
                 "description": "",
                 "header_label":"RelWindDir_deg",
                 "label": " ",
-                "range": [],
+                "instrument_range": [],
                 "resolution":"NaN",
                 "type": "measured",
                 "units": "degrees",
@@ -260,7 +258,7 @@
                 "description": "",
                 "header_label":"RelWindSpd_m/s",
                 "label": "Wind Speed",
-                "range": [],
+                "instrument_range": [],
                 "resolution": "NaN",
                 "type": "measured",
                 "units": "m/s",
@@ -280,7 +278,7 @@
     },
     {
         "alternative_label": "OSi OPtical Rain Gauge",
-        "definition": "A series of optical scintillation rain gauges that measure rain rate in the range 0.1 to 500 mm/hr; rain accumulation in the range 0.001 to 999.999 mm with accuracy of 5% accumulation. They operate in temperatures from -40 to 50 degrees C. Versions differ by their electrical outputs , output connections and detection capablities. Digital output versions include - ORG-815-DR, ORG-815-DS, ORG-815-DC which are capable of distinguishing precipitation by rain or snow. Analog output versions include - ORG-815-DA which does not distinguish precipitation type.",
+        "definition": "A series of optical scintillation rain gauges that measure rain rate in the instrument_range 0.1 to 500 mm/hr; rain accumulation in the instrument_range 0.001 to 999.999 mm with accuracy of 5% accumulation. They operate in temperatures from -40 to 50 degrees C. Versions differ by their electrical outputs , output connections and detection capablities. Digital output versions include - ORG-815-DR, ORG-815-DS, ORG-815-DC which are capable of distinguishing precipitation by rain or snow. Analog output versions include - ORG-815-DA which does not distinguish precipitation type.",
         "instrument_type": "precipitation gauges",
         "example_output":"00 .000 113.127 01*0 4999 0040 0040 019", 
         "fields": [
@@ -290,7 +288,7 @@
                 "description": "WMO Present weather condition code",
                 "header_label":"WMOCode",
                 "label": "WMO Present Weather",
-                "range": [],
+                "instrument_range": [],
                 "resolution":"NaN",
                 "type": "",
                 "units": " ",
@@ -303,7 +301,7 @@
                 "description": "Instantaneous precipitation rate",
                 "header_label":"PrecipRate_mm/hr",
                 "label": " ",
-                "range": [],
+                "instrument_range": [],
                 "resolution":"NaN",
                 "type": "",
                 "units": "mm/hr",
@@ -316,7 +314,7 @@
                 "description": "Accumulated precipitation",
                 "header_label":"PrecipAccum_mm",
                 "label": " ",
-                "range": [],
+                "instrument_range": [],
                 "resolution":"NaN",
                 "type": "",
                 "units": "mm",
