@@ -97,9 +97,9 @@
                 "units_long": "S/m"
             },
             {
-                "accuracy": "NaN",
+                "accuracy": 0.005,
                 "alternative_label": "Salinity",
-                "description": "Salinity derived from t1 and t2",
+                "description": "Salinity derived from temperature and conductivity",
                 "header_label": "Salinity",
                 "label": "Salinity",
                 "instrument_range": [],
@@ -111,7 +111,7 @@
             {
                 "accuracy": "NaN",
                 "alternative_label": "Sound Velocity",
-                "description": "Sound velocity derived from t1 and t2",
+                "description": "Sound velocity derived",
                 "header_label": "SoundVelocity",
                 "label": "Sound Velocity",
                 "instrument_range": [],

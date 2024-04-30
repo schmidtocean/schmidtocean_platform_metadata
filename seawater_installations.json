@@ -2,29 +2,33 @@
     {
         "installations": [
             {
-                "calibration_date":  {
-                    "sbe45":"2022-05-15",
-                    "sbe38":"2022-03-03"
+                "calibration_date": {
+                    "sbe38": "2022-03-03",
+                    "sbe45": "2022-05-15"
                 },
                 "calibration_file": "",
                 "filename_prefix": "tsg_sbe45_1",
+                "installed_date": "2023-12-01",
                 "location_long": "Flowthrough seawater system, primary",
                 "location_short": "1",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
-                    "sbe45": "0800",
-                    "sbe38": "0680"
+                    "sbe38": "0680",
+                    "sbe45": "0800"
                 }
             },
             {
                 "calibration_date": {
-                    "sbe45":"2022-05-03",
-                    "sbe38":"2022-03-03"
+                    "sbe38": "2022-03-03",
+                    "sbe45": "2022-05-03"
                 },
                 "filename_prefix": "tsg_sbe45_2",
+                "installed_date": "2023-12-01",
                 "location_long": "Flowthrough seawater system, secondary",
                 "location_short": "2",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
                     "sb349": "0799",
                     "sbe38": "0655"
@@ -40,9 +44,11 @@
                 "calibration_date": "2022-03-01",
                 "calibration_file": "",
                 "filename_prefix": "fluorometer_1",
+                "installed_date": "2023-12-01",
                 "location_long": "Flowthrough seawater system, primary",
                 "location_short": "1",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
                     "unit": "4906"
                 }
@@ -51,9 +57,11 @@
                 "calibration_date": "2022-04-01",
                 "calibration_file": "",
                 "filename_prefix": "fluorometer_2",
+                "installed_date":"2023-12-01",
                 "location_long": "Flowthrough seawater system, secondary",
                 "location_short": "2",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
                     "unit": "7472"
                 }
@@ -67,23 +75,14 @@
             {
                 "calibration_date": " 2021-01-11",
                 "calibration_file": "",
-                "filename_prefix": "",
-                "location_long": "Flowthrough seawater system, primary",
+                "filename_prefix": "pH_2",
+                "installed_date": "",
+                "location_long": "Flowthrough seawater system, secondary",
                 "location_short": "1",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
                     "unit": "AP0013"
-                }
-            },
-            {
-                "calibration_date": " ",
-                "calibration_file": "",
-                "filename_prefix": "",
-                "location_long": " ",
-                "location_short": " ",
-                "notes": "",
-                "serial_numbers": {
-                    "unit": " "
                 }
             }
         ],
@@ -96,9 +95,11 @@
                 "calibration_date": "2022-04-08",
                 "calibration_file": "",
                 "filename_prefix": "transmissometer_1",
+                "installed_date": "2023-02-05",
                 "location_long": "Flowthrough seawater system, primary",
                 "location_short": "1",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
                     "unit": "2187"
                 }
@@ -107,6 +108,7 @@
                 "calibration_date": "2022-03-31",
                 "calibration_file": "",
                 "filename_prefix": "transmissometer_2",
+                "installed_date": "2023-10-18",
                 "location_long": "Flowthrough seawater system,secondary",
                 "location_short": "2",
                 "notes": "",
@@ -124,9 +126,11 @@
                 "calibration_date": "2022-03-16",
                 "calibration_file": "",
                 "filename_prefix": "",
-                "location_long": " ",
+                "installed_date": "2023-05-02",
+                "location_long": "Aft launch tube",
                 "location_short": "aft",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
                     "unit": "35821"
                 }
@@ -135,9 +139,11 @@
                 "calibration_date": "2022-02-24",
                 "calibration_file": "",
                 "filename_prefix": "",
-                "location_long": " ",
+                "installed_date": "2023-05-15",
+                "location_long": "Foreward launch tube",
                 "location_short": "fwd",
                 "notes": "",
+                "removal_date": "",
                 "serial_numbers": {
                     "unit": "44486"
                 }
