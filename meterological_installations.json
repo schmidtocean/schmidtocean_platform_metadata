@@ -2,10 +2,10 @@
     {
         "installations": [
             {
-                "calibration_date": "2021-11-22",
+                "calibration_date":  {"unit": "2021-11-22"},
                 "calibration_file": "",
                 "filename_prefix": "mpp_fm",
-                "installed_date": "",
+                "installed_date": "2023-02-02",
                 "location_long": "Foremast",
                 "location_short": "fm",
                 "notes": "",
@@ -17,17 +17,17 @@
                 }
             },
             {
-                "calibration_date": "",
+                "calibration_date":  {"unit": ""},
                 "filename_prefix": "mpp_wh_stb",
-                "installed_date": "",
+                "installed_date": "2024-04-19",
                 "location_long": "Wheelhouse Top Starboard Side",
                 "location_short": "wh_stb",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "anemometer": "",
-                    "bracket": "217460023",
-                    "hydroclip": "20269221"
+                    "anemometer": "17460042",
+                    "bracket": "17460023",
+                    "hydroclip": "20393894"
                 }
             }
         ],
@@ -37,10 +37,10 @@
     {
         "installations": [
             {
-                "calibration_date": "2021-10-08",
+                "calibration_date":  {"unit": "2021-10-08"},
                 "calibration_file": "",
                 "filename_prefix": "met4_fm",
-                "installed_date": "",
+                "installed_date": "2023-02-02",
                 "location_long": "Foremast",
                 "location_short": "fm",
                 "notes": "",
@@ -56,10 +56,10 @@
     {
         "installations": [
             {
-                "calibration_date": "2022-04-19",
+                "calibration_date":  {"unit": "2022-04-19"},
                 "calibration_file": "",
                 "filename_prefix": "par_fm_stb",
-                "installed_date": "",
+                "installed_date": "2023-02-02",
                 "location_long": "Foremast - Starboard Side",
                 "location_short": "fm_stb",
                 "notes": "",
@@ -69,7 +69,7 @@
                 }
             },
             {
-                "calibration_date": "2022-04-19",
+                "calibration_date":  {"unit": "2022-04-19"},
                 "calibration_file": "",
                 "filename_prefix": "par_fm_stb",
                 "installed_date": "2024-04-24",
@@ -82,14 +82,14 @@
                 }
             },
             {
-                "calibration_date": "2022-04-19",
+                "calibration_date":  {"unit": "2022-04-19"},
                 "calibration_file": "",
                 "filename_prefix": "par_fm_port",
                 "installed_date": "2024-04-26",
                 "location_long": "Foremast - Port Side",
                 "location_short": "fm_port",
                 "notes": "",
-                "removal_date": "2024-04-25",
+                "removal_date": " ",
                 "serial_numbers": {
                     "unit": "20613"
                 }
@@ -101,10 +101,10 @@
     {
         "installations": [
             {
-                "calibration_date": "2020-12-10",
+                "calibration_date":  {"unit": "2020-12-10"},
                 "calibration_file": "",
                 "filename_prefix": "rad_fm",
-                "installed_date": "",
+                "installed_date": "2023-02-02",
                 "location_long": "Foremast",
                 "location_short": "fm",
                 "notes": "",
@@ -121,10 +121,10 @@
     {
         "installations": [
             {
-                "calibration_date": "2022-05-28",
+                "calibration_date":  {"unit": "2022-05-28"},
                 "calibration_file": "",
                 "filename_prefix": "windsonic_fm",
-                "installed_date": "",
+                "installed_date": "2023-02-02",
                 "location_long": "Foremast",
                 "location_short": "fm",
                 "notes": "mounted 180 degrees out of North mark",
@@ -140,10 +140,10 @@
     {
         "installations": [
             {
-                "calibration_date": "2022-07-18",
+                "calibration_date":  {"unit": "2022-07-18"},
                 "calibration_file": "",
                 "filename_prefix": "raingauge_fm",
-                "installed_date": "",
+                "installed_date": "2024-01-01",
                 "location_long": "Foremast",
                 "location_short": "fm",
                 "notes": "output set for WMO codes",

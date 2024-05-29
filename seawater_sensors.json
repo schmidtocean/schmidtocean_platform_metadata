@@ -2,7 +2,7 @@
     {
         "alternative_label": "WET Labs ECO FL",
         "definition": "An open flat-face fluorometer that can be used to measure relative chlorophyll, CDOM, uranine, phycocyanin, or phycoerythrin concentrations by directly measuring the amount of fluorescence emission in a sample volume of water.",
-        "example_output": "$FLUO,99-99-99,99:99:99,0.88,695,166,530*0F",
+        "example_output": "2023-12-13T00:00:00.906560Z,99/99/99 99:99:99 0.11 695 61 526",
         "fields": [
             {
                 "accuracy": "NaN",
@@ -47,7 +47,7 @@
                 "uri": ""
             }
         ],
-        "file_header": "Timestamp,Date,Time,ChlSig_ug/l,NU,ChlSigRaw,Therm*CheckSum",
+        "file_header": "Timestamp, Date, Time, ChlSig_ug/l, NU, ChlSigRaw, Therm*CheckSum",
         "filename": "{cruise_id}_fluorometer_{num}-%Y-%m-%d.txt",
         "identifier": "SDN:L22::TOOL0172",
         "instrument_type": "fluorometer",
@@ -63,7 +63,7 @@
     {
         "alternative_label": "SBE 45 MicroTSG",
         "definition": "A small externally powered, high-accuracy instrument, designed for shipboard determination of sea surface (pumped-water) conductivity and temperature. It is constructed of plastic and titanium to ensure long life with minimum maintenance. It may optionally be interfaced to an external SBE 38 hull temperature sensor.",
-        "example_output": "07/09/2019,17:45:02.659,t1= 17.4134, c1= 4.21067, s= 32.2437, sv=1509.149, t2= 16.8268",
+        "example_output": "2023-12-03T10:29:29.558455Z, 28.7849,  5.15907,  31.2515",
         "fields": [
             {
                 "accuracy": 0.002,
@@ -150,7 +150,7 @@
     {
         "alternative_label": "Sunburst AFT pH",
         "definition": "Instruments that measure the hydrogen ion concentration in the water column",
-        "example_output": "11/19/2019,20:12:49.822,$SBSPH,323.8417,26.75,35.00,8.0376,11.23,2019-11-19,20:12:01",
+        "example_output": "2023-12-15T00:10:41.308769Z,$SBSPH,349.0069,29.57,35.00,7.9368,8.62,2023-12-15,00:09:59",
         "fields": [
             {
                 "accuracy": 0.003,
@@ -208,7 +208,7 @@
                 "uri": ""
             }
         ],
-        "file_header": "Timestamp,Header,Year_Day,Temperature_C,Salinity_Constant,pH,Battery_Voltage,Date,Time",
+        "file_header": "Timestamp,Header,Year_Day, Temperature_C, Salinity_Constant, pH, Battery_Voltage, Date, Time",
         "filename": "{cruise_id}_pH_sunburst_{num}-%Y-%m-%d.txt",
         "identifier": "",
         "instrument_type": "pH sensors",
@@ -242,7 +242,7 @@
             }
         ],
         "file_header": "Timestamp,SoundVelocity_m/s",
-        "filename": "{cruise_id}_    _{num}-%Y-%m-%d.txt",
+        "filename": "{cruise_id}_minisvs_{num}-%Y-%m-%d.txt",
         "identifier": "L22::TOOL1495",
         "instrument_type": "Sound Speed Velocimeter",
         "label": "Valeport MiniSVS SSV (Sound Speed Velocimeter)",
@@ -255,7 +255,7 @@
     {
         "alternative_label": "WET Labs C-Star transmissometer",
         "definition": "An underwater optical beam transmissometer capable of free-space measurements or mounting in a flow tube with a pump for underway or moored applications. It is available in a variety of wavelengths, typically red, blue or green, with a path length of 10 or 25 cm, and in deep or shallow options.",
-        "example_output": "2023-12-09T00:00:00.186544Z,CST-2187DR 09562 12175 14958 00.131 525",
+        "example_output": "2023-12-03T08:47:10.389455Z,CST-2187DR 09964 13004 15300 00.040 532",
         "fields": [
             {
                 "accuracy": "NaN",

@@ -97,7 +97,7 @@
             }
         ],
         "filename": "{cruise_id}_mpp_{location}_{num}-%Y-%m-%d.txt",
-        "file_header":"Timestamp,NodeLetter,WindDir_deg,WindSpd_m/s,AirPres_hPa,Humidity_%,AirTemp_C,DewPoint,PRT,AnI/P1,AnI/P2,DigI/P,SupplyVoltage,SupplyCode,CheckSum",
+        "file_header":"Timestamp,NodeLetter,WindDir_deg,WindSpd_m/s,AirPres_hPa,Humidity_%, AirTemp_C, DewPoint, PRT, AnI/P1, AnI/P2, DigI/P, SupplyVoltage, SupplyCode, CheckSum",
         "identifier": "SDN:L22::TOOL1559",
         "label": "Gill MetPak Pro Weather Station",
         "manual_link": "",
@@ -156,7 +156,7 @@
             }
         ],
         "filename": "{cruise_id}_met4_{location}-%Y-%m-%d.txt",
-        "file_header":"Timestamp,Header,P,AirPres_hPa,hPa,PresSensorSN,C,AirTemp_C,C,TempSensorSN,H,Humidity_%,P,HumidSensorSN",
+        "file_header":"Timestamp,Header,P,AirPres_hPa,hPa,PresSensorSN, C,AirTemp_C,C, TempSensorSN,H,Humidity_%,P,HumidSensorSN",
         "identifier": "",
         "label": "Paroscientific Met4",
         "manual_link": "https://paroscientific.com/pdf/8008-001_Manual_for_MET4_and_MET4A_Meteorological_Measurement_Systems.pdf",
@@ -169,7 +169,7 @@
         "alternative_label": "Biospherical QSR-2200",
         "definition": "A surface reference radiometer to measure scalar irradiance from sunlight with a PAR response. These sensors are often used on ships during on-deck incubations, or while a QSP sensor is vertically profiling, for example, when mounted on a CTD. The QSR-2200 outputs a linear analog signal and is compatible with data loggers that can accept a wide instrument_range of signal voltages. QSR sensors are equipped with a detachable field-of-view cutoff shield to limit its response to light from the upper hemisphere (2 &pi; steradians).",
         "instrument_type": "radiometer",
-        "example_output": "",
+        "example_output": "2024-04-13T00:00:00.945723Z,1,0,7,0.001068",
         "fields": [
             {
                 "accuracy": "NaN",
@@ -185,6 +185,7 @@
             }
         ],
         "filename": "{cruise_id}_par_{location}-%Y-%m-%d.txt",
+        "file_header":"Timestamp,channel,mode,raw_value,scaled_value",
         "identifier": "SDN:L22::TOOL2017",
         "label": "Biospherical Instruments QSR 2200 surface reference radiometer",
         "manual_link": "http://www.biospherical.com/BSI%20PDFs/Brochures/QSR-2000.pdf",
@@ -224,7 +225,7 @@
             }
         ],
         "filename": "{cruise_id}_rad_{location}-%Y-%m-%d.txt",
-        "file_header":"Timestamp,Header,InstrumentDate,InstrumentTime,Samples,PIR_mV,LW_Wm-2,CaseTemp_C,DomeTemp_C,SW_Wm-2,BoardTemp_C,BattVoltage_V",
+        "file_header":"Timestamp,Header,InstrumentDate,InstrumentTime, Samples,PIR_mV,LW_Wm-2, CaseTemp_C, DomeTemp_C, SW_Wm-2, BoardTemp_C,BattVoltage_V",
         "identifier": ["SDN:L22::TOOL0083","SDN:L22::TOOL2020"],
         "label": "Eppley SPP/PIR Radiometers",
         "manual_link": "",
@@ -237,7 +238,7 @@
         "alternative_label": "Windsonic",
         "definition": "A 2-axis sonic anemometer measuring horizontal wind speed and direction that is suitable for land-based and marine environments. Available in four options, providing a number of different digital and analogue outputs.",
         "instrument_type": "anemometer",
-        "example_output": "",
+        "example_output": "2023-12-09T00:00:00.004430Z,$WIMWV,327,R,001.14,M,A*0C",
         "fields": [
             {
                 "accuracy": "NaN",
@@ -266,7 +267,7 @@
                 "uri": ""
             }
         ],
-        "filename": "{cruise_id}_windsonic_{location}-%Y-%m-%d.txt",
+        "filename": "{cruise_id}_windsonic_{location}_mwv-%Y-%m-%d.txt",
         "file_header":"Timestamp,Header,RelWindDir_deg,R,RelWindSpd_m/s,M*CheckSum",
         "identifier": "",
         "label": "Gill Windsonic anemometer",

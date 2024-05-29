@@ -1,0 +1,375 @@
+[
+    {
+        "alternative_label": "Applanix POSMV GPS",
+        "definition": "The Position and Orientation Systems for Marine Vessels (POSMV) is a real time kinematic (RTK) and differential global positioning system (DGPS) receiver for marine navigation. It includes an inertial system that provides platform attitude information. The instrument provides accurate location, heading, velocity, attitude, heave, acceleration and angular rate measurements.",
+        "example_output": ["2023-12-01T21:03:03.991339Z,$GPGGA,210303.859,0853.41022,N,07926.24504,W,5,38,0.7,-0.28,M,,,12,1015*05",
+            "2023-12-01T21:03:03.924775Z,$GPGGK,210303.859,120123,0853.41022407,N,07926.24504142,W,2,38,1.3,EHT13.297,M*50",
+            "2023-12-01T21:03:03.953125Z,$GPGST,210303.859,,0.1,0.1,0.0,0.1,0.1,0.1*4F",
+            "2023-12-01T21:02:59.097601Z,$PASHR,210258.859,124.91,T,-0.19,0.10,-0.11,0.017,0.017,0.010,2,1*1C",
+            "2023-12-01T21:03:04.026175Z,$GPVTG,127.2,T,,M,7.8,N,14.5,K,D*31",
+            "2023-12-01T21:03:04.046160Z,$GPZDA,210304.0045,01,12,2023,,*62"
+       ],
+        "fields": [
+            {
+                "gga": [
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "Latitude",
+                        "resolution":"",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "Longitude",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": " GPS quality indicator (0=invalid; 1=GPS fix; 2=Diff. GPS fix)",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "GPS quality Indicator",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "Number of satellites in use",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "HDOP",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "Horizontal dilution of position",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }                    ,
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": " ",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "Antenna altitude above/below mean sea level (geoid)",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }
+                ],
+                "ggk": [
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":"" ,
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }
+                ],
+                "gst": [
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":"" ,
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }
+                ],
+                "hdt": [
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":"" ,
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }
+                ],
+                "pashr": [
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":"" ,
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }
+                ],
+                "vtg": [
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":"" ,
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }
+                ],
+                "zda": [
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":"" ,
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    },
+                    {
+                        "accuracy": "NaN",
+                        "alternative_label": "",
+                        "description": "",
+                        "header_label": "",
+                        "instrument_range": [],
+                        "label": "",
+                        "resolution":" ",
+                        "type": "",
+                        "units": "",
+                        "units_long": "",
+                        "uri": ""
+                    }
+                ]
+            }
+        ],
+        "file_header": {
+            "gga": "",
+            "ggk": "",
+            "gst": "",
+            "hdt":"",
+            "pashr": "",
+            "vtg": "",
+            "zda": ""
+        },
+        "filename": "{cruise_id}_posmv_{msg}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL0482",
+        "instrument_type": "Differential Global Positioning System receivers",
+        "label": "Trimble Applanix POSMV global positioning system",
+        "manual_link": " ",
+        "parser": " ",
+        "permit_parameters": [
+            " "
+        ],
+        "soi_device": "posmv",
+        "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0482/"
+    },
+    {
+        "alternative_label": "Kongsberg Seapath 380 series",
+        "definition": "Heading, attitude and positioning sensor series, designed to support hydrographic surveying and dredging activities with high precision navigation measurements. Seapath 380 instruments are composed of a 555-channel dual frequency Real Time Kinematics (RTK) Global Navigation Satellite System (GNSS) receiver and a Motion Reference Unit (MRU) inertial sensor. Different Seapath 380 models within the series determine the type of MRU mounted on the instrument: MRU models be either 5+, 5, H or 3, with associated RMS roll and pith accuracy of 0.008 deg, 0.02 deg, 0.03 deg and 0.08 deg respectively. Each instrument features 2 cm heave accuracy (delayed signal), and position accuracy of 0.01 m + 1 ppm RMS (X and Y) can be achieved through post processing of satellite and Inertial Measurement Unit (IMU) data. The position solution can use all available satellites, including GPS, GLONASS, Galileo, Beidou and QZSS.",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy": "NaN",
+                "alternative_label": "",
+                "description": "",
+                "header_label": "",
+                "instrument_range": [],
+                "label": "",
+                "resolution":"" ,
+                "type": "",
+                "units": "",
+                "units_long": "",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "",
+                "description": "",
+                "header_label": "",
+                "instrument_range": [],
+                "label": "",
+                "resolution":"" ,
+                "type": "",
+                "units": "",
+                "units_long": "",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}__{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL1623",
+        "instrument_type": "Differential Global Positioning System receivers",
+        "label": "Kongsberg Seatex Seapath 380 heading, attitude and positioning sensor series",
+        "manual_link": " ",
+        "parser": " ",
+        "permit_parameters": [
+            " "
+        ],
+        "soi_device": "seapath380",
+        "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL1623/"
+    },
+    {
+        "alternative_label": "",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy": "NaN",
+                "alternative_label": "",
+                "description": "",
+                "header_label": "",
+                "instrument_range": [],
+                "label": "",
+                "resolution":"" ,
+                "type": "",
+                "units": "",
+                "units_long": "",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "",
+                "description": "",
+                "header_label": "",
+                "instrument_range": [],
+                "label": "",
+                "resolution":"" ,
+                "type": "",
+                "units": "",
+                "units_long": "",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}__{num}-%Y-%m-%d.txt",
+        "identifier": "",
+        "instrument_type": " ",
+        "label": "",
+        "manual_link": " ",
+        "parser": " ",
+        "permit_parameters": [
+            " "
+        ],
+        "soi_device": "f ",
+        "uri": " "
+    }
+]
