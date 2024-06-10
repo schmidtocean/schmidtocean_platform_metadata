@@ -59,19 +59,6 @@
                 "calibration_date":  {"unit": "2022-04-19"},
                 "calibration_file": "",
                 "filename_prefix": "par_fm_stb",
-                "installed_date": "2023-02-02",
-                "location_long": "Foremast - Starboard Side",
-                "location_short": "fm_stb",
-                "notes": "",
-                "removal_date": "2024-04-24",
-                "serial_numbers": {
-                    "unit": "20613"
-                }
-            },
-            {
-                "calibration_date":  {"unit": "2022-04-19"},
-                "calibration_file": "",
-                "filename_prefix": "par_fm_stb",
                 "installed_date": "2024-04-24",
                 "location_long": "Foremast - Starboard Side",
                 "location_short": "fm_stb",
