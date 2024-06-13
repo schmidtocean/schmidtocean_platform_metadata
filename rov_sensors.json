@@ -285,7 +285,7 @@
                 "type": "derived",
                 "units": "PSU",
                 "units_long": "Practical Salinity Units"
-            },
+            }
         ],
         "file_header": "",
         "filename": "{cruise_id}_sb_ctd_uvsvx_{num}-%Y-%m-%d.txt",
