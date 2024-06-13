@@ -18,13 +18,13 @@
                 "uri": ""
             },
             {
-                "accuracy":"",
+                "accuracy": "",
                 "alternative_label": " ",
                 "description": " ",
                 "header_label": " ",
                 "instrument_range": [],
                 "label": " ",
-                "resolution":"",
+                "resolution": "",
                 "type": "measured",
                 "units": " ",
                 "units_long": " ",
@@ -381,7 +381,7 @@
             ""
         ],
         "instrument_type": " ",
-        "label": "S ",
+        "label": "AMT pH Sensor",
         "manual_link": " ",
         "parser": "",
         "permit_parameters": [
