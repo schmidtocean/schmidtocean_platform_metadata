@@ -1,0 +1,337 @@
+[
+    {
+        "alternative_label": "Gill Met Pak Pro",
+        "definition": "A multiparameter weather station for measuring various meteorological parameters in marine environments. These include wind speed and direction, temperature, relative humidity, barometric pressure and dew point. The base station combines a Gill WindSonic ultrasonic wind speed and direction sensor, a barometric pressure sensor and Totronic Hygroclip temperature and humidity probe. MetPak Pro includes Gill's MetSet configuration software and MetView data logging and visualisation software. It is also supplied with mast mounting kits. Up to four additional external devices can be connected, such as a Pt100 temperature sensor and tipping bucket rain gauge, plus two analogue sensors. Alternatively, the base station itself can be configured with an optional rain gauge and various remote wind sensors. It can measure wind speeds from 0-60 m/s between 0-359 degrees at +/- 2 percent accuracy in speed and +/- 3 degrees accuracy in direction (at 12 m/s). It measures air temperature from -50 to +100 degC at +/- 0.1 degC accuracy and 0.1 degC resolution.",
+        "instrument_type": "meteorological packages",
+        "example_output": "2023-12-02T00:00:00.878301Z, Q,132,001.14,1006.4,077.6,+029.9,+025.6,,+99998.0006,+99998.0004,0000.000,+11.7,00, 4F",
+        "fields": [
+            {
+                "accuracy": "3 deg @ 12 m/s",
+                "alternative_label": "Wind Dir",
+                "description": "",
+                "header_label":"WindDir_deg",
+                "label": "Relative Wind Direction",
+                "instrument_range": [
+                    0,
+                    359
+                ],
+                "resolution": 1,
+                "type": "measured",
+                "units": "deg",
+                "units_long": "Degrees",
+                "uri": ""
+            },
+            {
+                "accuracy": "2% @ 12 m/s",
+                "alternative_label": "Wind Speed",
+                "description": "",
+                "header_label":"WindSpd_m/s",
+                "label": "Relative Wind Speed",
+                "instrument_range": [],
+                "resolution": 0.01,
+                "type": "measured",
+                "units": "m/s",
+                "units_long": "meters per second",
+                "uri": ""
+            },
+            {
+                "accuracy": 0.5,
+                "alternative_label": "Air Press",
+                "description": "",
+                "label": "Air Pressure",
+                "header_label":"AirPres_hPa",
+                "instrument_range": [
+                    600,
+                    1100
+                ],
+                "resolution": 0.1,
+                "type": "measured",
+                "units": "hPa",
+                "units_long": "",
+                "uri": ""
+            },
+            {
+                "accuracy": "0.8% @ 23 C",
+                "alternative_label": "Humidity",
+                "description": "",
+                "header_label":"Humidity_%",
+                "label": "Humidity",
+                "instrument_range": [],
+                "resolution": 0.1,
+                "type": "measured",
+                "units": "%",
+                "units_long": "percent relative humidity",
+                "uri": ""
+            },
+            {
+                "accuracy": "0.1",
+                "alternative_label": "Air Temp",
+                "description": "",
+                "header_label":"AirTemp_C",
+                "label": "Air Temperature",
+                "instrument_range": [
+                    50,
+                    100
+                ],
+                "resolution": 0.1,
+                "type": "measured",
+                "units": "deg C",
+                "units_long": "Degrees Celcius",
+                "uri": ""
+            },
+            {
+                "accuracy": "0.15 @ 23 C",
+                "alternative_label": "Dew Point",
+                "description": "",
+                "header_label":"DewPoint",
+                "label": "humidity",
+                "instrument_range": [
+                    50,
+                    100
+                ],
+                "resolution": 0.1,
+                "type": "derived",
+                "units": "deg C",
+                "units_long": "Degrees Celcius",
+                "uri": ""
+            }
+        ],
+        "filename": "{cruise_id}_mpp_{location}_{num}-%Y-%m-%d.txt",
+        "file_header":"Timestamp,NodeLetter,WindDir_deg,WindSpd_m/s,AirPres_hPa,Humidity_%, AirTemp_C, DewPoint, PRT, AnI/P1, AnI/P2, DigI/P, SupplyVoltage, SupplyCode, CheckSum",
+        "identifier": "SDN:L22::TOOL1559",
+        "label": "Gill MetPak Pro Weather Station",
+        "manual_link": "",
+        "parser": "{timestamp:S},{:1W}{NodeLetter:w},{WindDir:od},{WindSpd:og},{AirPres:og},{Humidity:og},{AirTemp:og},{DewPoint:og},,{:og},{:og},{:og},{SupplyVoltage:og},{SupplyCode:ow},{:1W}{CheckSum:x}",
+        "permit_parameters":["wind speed", "wind direction", "air temperature", "air pressure", "humidity", "dew point"],
+        "soi_device": "metpakpro",
+        "uri": "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1559/"
+    },
+    {
+        "alternative_label": "ParoScientific Met4",
+        "definition": "",
+        "instrument_type": "meteorological packages",
+        "example_output": "2023-12-01T21:03:05.545211Z,$WIXDR,P,1004.502,hPa,DQ153542,C,31.12,C,DQ20408332,H,70.57,P,DQ20408332",
+        "fields": [
+            {
+                "accuracy": 0.08,
+                "alternative_label": "Air Pres",
+                "description": "",
+                "header_label":"AirPres_hPa",
+                "label": "Air Pressure",
+                "instrument_range": [],
+                "resolution": 0.1,
+                "type": "measured",
+                "units": "hPa",
+                "units_long": "hectoPascals (millibars)",
+                "uri": ""
+            },
+            {
+                "accuracy": 0.5,
+                "alternative_label": "Humidity",
+                "description": "",
+                "header_label":"Humidity_%",
+                "label": "Humidity",
+                "instrument_range": [],
+                "resolution": 0.1,
+                "type": "measured",
+                "units": "%",
+                "units_long": "percent relative humidity",
+                "uri": ""
+            },
+            {
+                "accuracy": "0.1",
+                "alternative_label": "Air Temp",
+                "description": "",
+                "header_label":"AirTemp_C",
+                "label": "Air Temperature",
+                "instrument_range": [
+                    50,
+                    100
+                ],
+                "resolution": 0.1,
+                "type": "measured",
+                "units": "deg C",
+                "units_long": "Degrees Celcius",
+                "uri": ""
+            }
+        ],
+        "filename": "{cruise_id}_met4_{location}-%Y-%m-%d.txt",
+        "file_header":"Timestamp,Header,P,AirPres_hPa,hPa,PresSensorSN, C,AirTemp_C,C, TempSensorSN,H,Humidity_%,P,HumidSensorSN",
+        "identifier": "",
+        "label": "Paroscientific Met4",
+        "manual_link": "https://paroscientific.com/pdf/8008-001_Manual_for_MET4_and_MET4A_Meteorological_Measurement_Systems.pdf",
+        "parser": "{timestamp:S},$WIXDR,P,{AirPres:g},hPa,{:w},C,{AirTemp:g},C,{:w},H,{Humidity:g},P,{:w}",
+        "permit_parameters":["air temperature","air pressure","humidity"],
+        "soi_device": "met4",
+        "uri": " "
+    },
+    {
+        "alternative_label": "Biospherical QSR-2200",
+        "definition": "A surface reference radiometer to measure scalar irradiance from sunlight with a PAR response. These sensors are often used on ships during on-deck incubations, or while a QSP sensor is vertically profiling, for example, when mounted on a CTD. The QSR-2200 outputs a linear analog signal and is compatible with data loggers that can accept a wide instrument_range of signal voltages. QSR sensors are equipped with a detachable field-of-view cutoff shield to limit its response to light from the upper hemisphere (2 &pi; steradians).",
+        "instrument_type": "radiometer",
+        "example_output": "2024-04-13T00:00:00.945723Z,1,0,7,0.001068",
+        "fields": [
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Voltage",
+                "description": "",
+                "label": " ",
+                "instrument_range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "V",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "filename": "{cruise_id}_par_{location}-%Y-%m-%d.txt",
+        "file_header":"Timestamp,channel,mode,raw_value,scaled_value",
+        "identifier": "SDN:L22::TOOL2017",
+        "label": "Biospherical Instruments QSR 2200 surface reference radiometer",
+        "manual_link": "http://www.biospherical.com/BSI%20PDFs/Brochures/QSR-2000.pdf",
+        "parser": "",
+        "permit_parameters":["photosynthetically active radiation"],
+        "soi_device": "par",
+        "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL2017/"
+    },
+    {
+        "alternative_label": "Eppley SPP/PIR Radiometers",
+        "definition": "This systems is composed of the Eppley PIR and Eppley SPP. The Eppley Precision Infrared Radiometer (PIR) pyrgeometer measures longwave (infrared) radiation. It is housed in a weatherproof titanium canister that has been painted with a very flat black paint that absorbs radiation. A small glass dome at the top of the instrument is covered with an 'interference coating' which allows only infrared radiation to come through. Light levels are detected as temperature changes creating voltages in fine wire coil detectors. A precision radiometer used to measure total energy from the sun. This can be either global shortwave irradiance or total irradiance in the plane of array (TPA). It can also be used to measure reflected or albedo irradiance, as well as diffuse shortwave irradiance. It is based on the design of the Eppley PSP pyranometer (https://vocab.nerc.ac.uk/collection/L22/current/TOOL0666/) but exhibits a faster response time, reduced thermal offset and improved cosine response. The SPP has a spectral range from 295-2800 nm, a sensitivity of 8 uV / Wm-2 and an impedance of approximately 700 ohms. It has an operating temperature from -50 to +80 degC. Hourly average measurement uncertainty is approximately 2 percent, daily average measurement uncertainty is approximately 1 percent.",
+        "instrument_type": "radiometer",
+        "example_output": "2023-12-01T21:03:11.040268Z,$WIR39,23/12/01,21:15:40, 175, -208.5, 440.54, 33.03, 32.44, 364.47, 39.9, 10.0",
+        "fields": [
+            {
+                "accuracy": "1.7%",
+                "alternative_label": "IrradanceLW",
+                "description": "long wave raditation",
+                "header_label": "LW_Wm-2",
+                "label": "Long Wave Irradance",
+                "instrument_range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "W/m2",
+                "units_long": "Watts per meter squared"
+            },
+            {
+                "accuracy": "0.9%",
+                "alternative_label": "IrradanceSW",
+                "description": "short wave readtiation",
+                "header_label":"SW_Wm-2",
+                "label": "Short Wave Irradiance",
+                "instrument_range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "W/m2",
+                "units_long": "Watts per meter squared"
+            }
+        ],
+        "filename": "{cruise_id}_rad_{location}-%Y-%m-%d.txt",
+        "file_header":"Timestamp,Header,InstrumentDate,InstrumentTime, Samples,PIR_mV,LW_Wm-2, CaseTemp_C, DomeTemp_C, SW_Wm-2, BoardTemp_C,BattVoltage_V",
+        "identifier": ["SDN:L22::TOOL0083","SDN:L22::TOOL2020"],
+        "label": "Eppley SPP/PIR Radiometers",
+        "manual_link": "",
+        "parser": "{timestamp:S},$WIR39,{InstrumentDate:S},{InstrumentTime:S}, {Samples:od}, {PIR:og}, {LW:og}, {CaseTemp:og}, {DomeTemp:og}, {SW:og}, {BoardTemp:og}, {BattVoltage:og}",
+       "permit_parameters":["global shortwave radiation","global longwave radiation"],
+        "soi_device": "rad",
+        "uri": ["http://vocab.nerc.ac.uk/collection/L22/current/TOOL0083/","http://vocab.nerc.ac.uk/collection/L22/current/TOOL2020/"]
+    },
+    {
+        "alternative_label": "Windsonic",
+        "definition": "A 2-axis sonic anemometer measuring horizontal wind speed and direction that is suitable for land-based and marine environments. Available in four options, providing a number of different digital and analogue outputs.",
+        "instrument_type": "anemometer",
+        "example_output": "2023-12-09T00:00:00.004430Z,$WIMWV,327,R,001.14,M,A*0C",
+        "fields": [
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Relative Wind Direction",
+                "description": "",
+                "header_label":"RelWindDir_deg",
+                "label": " ",
+                "instrument_range": [],
+                "resolution":"NaN",
+                "type": "measured",
+                "units": "degrees",
+                "units_long": "deg",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Relative Wind Speed",
+                "description": "",
+                "header_label":"RelWindSpd_m/s",
+                "label": "Wind Speed",
+                "instrument_range": [],
+                "resolution": "NaN",
+                "type": "measured",
+                "units": "m/s",
+                "units_long": "meters per second",
+                "uri": ""
+            }
+        ],
+        "filename": "{cruise_id}_windsonic_{location}_mwv-%Y-%m-%d.txt",
+        "file_header":"Timestamp,Header,RelWindDir_deg,R,RelWindSpd_m/s,M*CheckSum",
+        "identifier": "",
+        "label": "Gill Windsonic anemometer",
+        "manual_link": "",
+        "parser": "{timestamp:S},$WIMWV,{WindDir:d},R,{WindSpd:g},M,{:ow}*{CheckSum:x}",
+        "permit_parameters":["wind direction","wind speed"],
+        "soi_device": "windsonic",
+        "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0197/"
+    },
+    {
+        "alternative_label": "OSi OPtical Rain Gauge",
+        "definition": "A series of optical scintillation rain gauges that measure rain rate in the instrument_range 0.1 to 500 mm/hr; rain accumulation in the instrument_range 0.001 to 999.999 mm with accuracy of 5% accumulation. They operate in temperatures from -40 to 50 degrees C. Versions differ by their electrical outputs , output connections and detection capablities. Digital output versions include - ORG-815-DR, ORG-815-DS, ORG-815-DC which are capable of distinguishing precipitation by rain or snow. Analog output versions include - ORG-815-DA which does not distinguish precipitation type.",
+        "instrument_type": "precipitation gauges",
+        "example_output":"00 .000 113.127 01*0 4999 0040 0040 019", 
+        "fields": [
+            {
+                "accuracy": "NaN",
+                "alternative_label": "WMO",
+                "description": "WMO Present weather condition code",
+                "header_label":"WMOCode",
+                "label": "WMO Present Weather",
+                "instrument_range": [],
+                "resolution":"NaN",
+                "type": "",
+                "units": " ",
+                "units_long": "",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Rate",
+                "description": "Instantaneous precipitation rate",
+                "header_label":"PrecipRate_mm/hr",
+                "label": " ",
+                "instrument_range": [],
+                "resolution":"NaN",
+                "type": "",
+                "units": "mm/hr",
+                "units_long":"millimeters per hour",
+                "uri": ""
+            },
+            {
+                "accuracy": "NaN",
+                "alternative_label": "Accum",
+                "description": "Accumulated precipitation",
+                "header_label":"PrecipAccum_mm",
+                "label": " ",
+                "instrument_range": [],
+                "resolution":"NaN",
+                "type": "",
+                "units": "mm",
+                "units_long": "millimeters",
+                "uri": ""
+            }
+        ],
+        "filename": "{cruise_id}_ _{location}-%Y-%m-%d.txt",
+        "file_header":"Timestamp,WMOCode PrecipRate_mm/hr PrecipAccum_mm 01 D1 D2 D3 D4",
+        "identifier": "",
+        "label": "OSi APG-815 Optical Rain Gauge",
+        "manual_link": "https://catalog.opticalscientific.com/item/hydromet-agrimet/apg-all-precipitation-weather-identifier-gauges/apg-815-ds",
+        "parser": "{timestamp:S},{WMO:d} {Rate:f} {Accum:g} 01*0 {:d} {:d} {:d} {:d}",
+        "permit_parameters":["precipitation"],
+        "soi_device": "raingauge",
+        "uri": ""
+    }
+]

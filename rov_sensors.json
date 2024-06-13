@@ -1,0 +1,429 @@
+ 
+ [ {
+        "alternative_label": "AA optode 4831",
+        "definition": "A dissolved oxygen sensor which provides analogue (0-5V) and digital output (RS-232) to third party data loggers, gliders and floats. Measurement based on the ability of selected substances to act as dynamic fluorescence quenchers. The fluorescent indicator is a special platinum porphyrin complex embedded in a gas permeable foil that is exposed to the surrounding water. In this standard model, a black optical isolation coating protects the complex from sunlight and fluorescent particles in the water. This sensing foil is attached to a window providing optical access for the measuring system from inside a watertight housing. The foil is excited by modulated blue light, and the phase of a returned red light is measured. For improved stability the 4831 optode also performs areference phase reading by use of a red LED that does not produce fluorescence in the foil. This model is fitted with a standard sensing foil. By linearizing and temperature compensating, with an incorporated temperature sensor, the absolute O2 concentration can be determined. Accuracy +/- 1.5% or 2uM; precision +/- 0.2 uM.",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "measured",
+                "units": " ",
+                "units_long": " ",
+                "uri": ""
+            },
+            {
+                "accuracy":  ,
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  ,
+                "type": "measured",
+                "units": " ",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_sb_ph_{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL1239",
+        "instrument_type": "dissolved gas sensors",
+        "label": "Aanderaa 4831 oxygen optode",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["oxygen"],
+        "soi_device": "sb_oxygen",
+        "uri": ["http://vocab.nerc.ac.uk/collection/L22/current/TOOL1239/"] 
+       },
+       {
+        "alternative_label": "Sea-Bird Electronics FastCAT SBE 45",
+        "definition": "A CTD sensor for use in autonomous platforms. It contains a SBE 3P temperature sensor, a SBE 4C conductivity sensor and a strain-gauge pressure sensor as standard. It can operate in autonomus (16 Hz per sec) or polled mode (transmits each sample). The sensor is depth-rated to 350 m (plastic housing) or 7000 m (titanium housing). Accuracy: +/- 0.002 deg C (temperature), +/- 0.0003 S/m (conductivity), 0.1% of full scale range (pressure).",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  0.002,
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Temperature_C",
+                "label": "Temperature",
+                "instrument_range": [
+                    -5,35
+                ],
+                "resolution":  0.0001,
+                "type": "measured",
+                "units": "C",
+                "units_long": "degrees Celcius"
+            },
+            {
+                "accuracy":  0.0003,
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Conductivity_S/m",
+                "label": "Conductivity",
+                "instrument_range": [0,9
+                    
+                ],
+                "resolution":  0.00005,
+                "type": "measured",
+                "units": "S/m",
+                "units_long": "Siemens per meter"
+            },
+            {
+                "accuracy":  "+-0.1% range",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Pressure_dbar",
+                "label": "Pressure",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "0.002% range",
+                "type": "",
+                "units": "dbar",
+                "units_long": "decibar"
+            },
+            {
+                "accuracy": "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Salinity_ppt",
+                "label": "Salinity",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "derived",
+                "units": "PPT",
+                "units_long": "Part Per Thousand"
+            },
+            {
+                "accuracy":  "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "SoundVelocity_m/s",
+                "label": "Sound Velocity",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "derived",
+                "units": "m/s",
+                "units_long": "meteres per second"
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_sb_ctd_sbe49_{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL0827",
+        "instrument_type": "ctd",
+        "label": "Sea-Bird SBE 49 FastCAT CTD",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["temperature","conductivity","pressure"],
+        "soi_device": " ",
+        "uri": ["http://vocab.nerc.ac.uk/collection/L22/current/TOOL0827/"] 
+       },
+       {
+        "alternative_label": "Digiquartz PS",
+        "definition": "A family of encapsulated pressure sensors based on Paroscientific patented technology that determines pressure by measuring the oscillating frequency of a quartz crystal resonator. They are available in depth ranges of 10-140m, 10-700m, 0-700m and 1400-7000m with accuracy of 0.01% full scale or 0.02% full scale for miniature sensors.",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  "0.01% range",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [0,10000
+                ],
+                "resolution":  "",
+                "type": "measured",
+                "units": "psi",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_sb_paro_{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL0931",
+        "instrument_type": "depth sensor",
+        "label": "Paroscientific Digiquartz depth sensors 8000",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["depth"],
+        "soi_device": " ",
+        "uri": ["http://vocab.nerc.ac.uk/collection/L22/current/TOOL0931/"] 
+       },
+       {
+        "alternative_label": "Valeport Mini IPS",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "measured",
+                "units": " ",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_ _{num}-%Y-%m-%d.txt",
+        "identifier": [" ",""],
+        "instrument_type": " ",
+        "label": "Valeport Mini IPS",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["pressure"],
+        "soi_device": " ",
+        "uri": [""] 
+       },
+       {
+        "alternative_label": "Valeport uvSVX",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  0.02,
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "SoundVelocity_m/s",
+                "label": "Sound Velocity",
+                "instrument_range": [1375,900
+                    
+                ],
+                "resolution":  0.001,
+                "type": "measured",
+                "units": "m/s",
+                "units_long": "meters per second",
+                "uri": ""
+            },
+            {
+                "accuracy":  "+-0.01% range",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Pressure_dbar",
+                "label": " ",
+                "instrument_range": [0,6000
+                    
+                ],
+                "resolution":  "0.001% range",
+                "type": "measured",
+                "units": "dbar",
+                "units_long": "decibar",
+                "uri": ""
+            },{
+                "accuracy":  0.001,
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Temperature_C",
+                "label": "Temperature",
+                "instrument_range": [
+                    -5,35
+                ],
+                "resolution":  0.001,
+                "type": "measured",
+                "units": "C",
+                "units_long": "degrees Celcius"
+            },
+            {
+                "accuracy":  0.05,
+                "alternative_label": " ",
+                "description": "Density_kg/m3",
+                "header_label": "Density",
+                "label": "Desnity",
+                "instrument_range": [ 
+                    
+                ],
+                "resolution":  "",
+                "type": "derived",
+                "units": "kg/m^3",
+                "units_long": " "
+            },
+            {
+                "accuracy":  "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Depth_m",
+                "label": "Depth",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  " ",
+                "type": "derived",
+                "units": "m",
+                "units_long": "meters"
+            },
+            {
+                "accuracy": -0.05,
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": "Salinity_PSU",
+                "label": "Salinity",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "derived",
+                "units": "PSU",
+                "units_long": "Practical Salinity Units"
+            },
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_sb_ctd_uvsvx_{num}-%Y-%m-%d.txt",
+        "identifier": [" ",""],
+        "instrument_type": " ",
+        "label": "Valeport uvSVX",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["sound velocity", "temperature", "depth"],
+        "soi_device": " ",
+        "uri": [""] 
+       },
+       {
+        "alternative_label": "Tritech Altimeter",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "measured",
+                "units": " ",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_ _{num}-%Y-%m-%d.txt",
+        "identifier": [" ",""],
+        "instrument_type": " ",
+        "label": "Tritech Altimeter",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["depth"],
+        "soi_device": " ",
+        "uri": [""] 
+       },
+       {
+        "alternative_label": "AMT pH Sensor",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "measured",
+                "units": " ",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_sb_ph_{num}-%Y-%m-%d.txt",
+        "identifier": [" ",""],
+        "instrument_type": " ",
+        "label": "S ",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["pH"],
+        "soi_device": " ",
+        "uri": [""] 
+       },
+       {
+        "alternative_label": "M3 Sonar",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  "",
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    
+                ],
+                "resolution":  "",
+                "type": "measured",
+                "units": " ",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}__{num}-%Y-%m-%d.txt",
+        "identifier": [" ",""],
+        "instrument_type": "sonar",
+        "label": "Kongsberg M3",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["bathymetric mapping"],
+        "soi_device": " ",
+        "uri": [""] 
+       },
+       {
+        "alternative_label": "M3 Sonar",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy":  0.45,
+                "alternative_label": " ",
+                "description": " ",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    0,600
+                ],
+                "resolution":  0.1,
+                "type": "measured",
+                "units": "C",
+                "units_long": "degrees Celcius",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_sb_hightemp_pt100_{num}-%Y-%m-%d.txt",
+        "identifier": [" ",""],
+        "instrument_type": "temperature",
+        "label": "PT100 temperature sensor",
+        "manual_link": " ",
+        "parser":"",
+        "permit_parameters": ["temperature"],
+        "soi_device": " ",
+        "uri": [""] 
+       }
+]
