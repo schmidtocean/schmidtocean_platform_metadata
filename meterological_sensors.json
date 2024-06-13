@@ -161,7 +161,7 @@
         "label": "Paroscientific Met4",
         "manual_link": "https://paroscientific.com/pdf/8008-001_Manual_for_MET4_and_MET4A_Meteorological_Measurement_Systems.pdf",
         "parser": "{timestamp:S},$WIXDR,P,{AirPres:g},hPa,{:w},C,{AirTemp:g},C,{:w},H,{Humidity:g},P,{:w}",
-        "permit_parameters":["photosynthetically active radiation"],
+        "permit_parameters":["air temperature","air pressure","humidity"],
         "soi_device": "met4",
         "uri": " "
     },
@@ -190,6 +190,7 @@
         "label": "Biospherical Instruments QSR 2200 surface reference radiometer",
         "manual_link": "http://www.biospherical.com/BSI%20PDFs/Brochures/QSR-2000.pdf",
         "parser": "",
+        "permit_parameters":["photosynthetically active radiation"],
         "soi_device": "par",
         "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL2017/"
     },
@@ -329,7 +330,7 @@
         "label": "OSi APG-815 Optical Rain Gauge",
         "manual_link": "https://catalog.opticalscientific.com/item/hydromet-agrimet/apg-all-precipitation-weather-identifier-gauges/apg-815-ds",
         "parser": "{timestamp:S},{WMO:d} {Rate:f} {Accum:g} 01*0 {:d} {:d} {:d} {:d}",
-        "permit_parameters":["percipitation"],
+        "permit_parameters":["precipitation"],
         "soi_device": "raingauge",
         "uri": ""
     }
