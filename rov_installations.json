@@ -1,0 +1,128 @@
+[
+    {
+        "installations": [
+            {
+                "calibration_date": {
+                    "unit": "2023-08-25"
+                },
+                "calibration_file": "",
+                "filename_prefix": "sb_oxygen",
+                "installed_date": "",
+                "location_long": "ROV SuBastian",
+                "location_short": "sb",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": "582"
+                }
+            }
+        ],
+        "label": "",
+        "soi_device": "sb_oxygen"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": {
+                    "unit": " "
+                },
+                "calibration_file": "",
+                "filename_prefix": "sb_ctd_sbe49",
+                "installed_date": " ",
+                "location_long": "ROV SuBastian",
+                "location_short": "sb",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": ""
+                }
+            }
+        ],
+        "label": "",
+        "soi_device": "sb_ctd_sbe49"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": {
+                    "unit": "2023-06-07"
+                },
+                "calibration_file": "",
+                "filename_prefix": "sb_ctd_uvsvx",
+                "installed_date": " ",
+                "location_long": "ROV SuBastian",
+                "location_short": "sb",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": "81173PTSA1014192"
+                }
+            }
+        ],
+        "label": "",
+        "soi_device": "sb_ctd_uvsvx"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": {
+                    "unit": " "
+                },
+                "calibration_file": "",
+                "filename_prefix": " ",
+                "installed_date": " ",
+                "location_long": "ROV SuBastian",
+                "location_short": "sb",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": "18100244"
+                }
+            }
+        ],
+        "label": "",
+        "soi_device": "sb_m3"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": {
+                    "unit": "2024-05-10"
+                },
+                "calibration_file": "",
+                "filename_prefix": " ",
+                "installed_date": " ",
+                "location_long": "ROV SuBastian",
+                "location_short": "sb",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": "134675"
+                }
+            }
+        ],
+        "label": "",
+        "soi_device": "sb_paro"
+    },
+    {
+        "installations": [
+            {
+                "calibration_date": {
+                    "unit": ""
+                },
+                "calibration_file": "",
+                "filename_prefix": " ",
+                "installed_date": " ",
+                "location_long": "ROV SuBastian",
+                "location_short": "sb",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": ""
+                }
+            }
+        ],
+        "label": "",
+        "soi_device": "sb_sprint"
+    }
+]
