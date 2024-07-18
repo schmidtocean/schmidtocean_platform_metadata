@@ -6,7 +6,7 @@
                     "sbe38": "2022-03-03",
                     "sbe45": "2022-05-15"
                 },
-                "calibration_file": "",
+                "calibration_file": ["/USW-Underway_Seawater_Sensor_Calibration_Documents/01-SBE45Thermosalinograph/TSG1/","/USW-Underway_Seawater_Sensor_Calibration_Documents/02-SBE38ExternalTemperature/TSG1/"],
                 "filename_prefix": "tsg_sbe45_1",
                 "installed_date": "2023-12-01",
                 "location_long": "Flowthrough seawater system, primary",
@@ -23,6 +23,7 @@
                     "sbe38": "2022-03-03",
                     "sbe45": "2022-05-03"
                 },
+                "calibration_file": ["/USW-Underway_Seawater_Sensor_Calibration_Documents/01-SBE45Thermosalinograph/TSG2/","/USW-Underway_Seawater_Sensor_Calibration_Documents/02-SBE38ExternalTemperature/TSG2/"],
                 "filename_prefix": "tsg_sbe45_2",
                 "installed_date": "2023-12-01",
                 "location_long": "Flowthrough seawater system, secondary",
@@ -42,7 +43,7 @@
         "installations": [
             {
                 "calibration_date": {"unit": "2022-03-01"},
-                "calibration_file": "",
+                "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/03-WetlabsFluorometer/FLNT1/",
                 "filename_prefix": "fluorometer_1",
                 "installed_date": "2023-12-01",
                 "location_long": "Flowthrough seawater system, primary",
@@ -55,7 +56,7 @@
             },
             {
                 "calibration_date": {"unit": "2022-04-01"},
-                "calibration_file": "",
+                "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/03-WetlabsFluorometer/FLNT2/",
                 "filename_prefix": "fluorometer_2",
                 "installed_date": "2023-12-01",
                 "location_long": "Flowthrough seawater system, secondary",
@@ -74,7 +75,7 @@
         "installations": [
             {
                 "calibration_date": { "unit": "2021-01-11"},
-                "calibration_file": "",
+                "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/04-Sunburst PH/PH2/",
                 "filename_prefix": "pH_2",
                 "installed_date": "2023-02-02",
                 "location_long": "Flowthrough seawater system, secondary",
@@ -93,7 +94,7 @@
         "installations": [
             {
                 "calibration_date": {"unit": "2022-04-08"},
-                "calibration_file": "",
+                "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/05-SeabirdCSTARTransmissometer/PrimaryTransmissometer/",
                 "filename_prefix": "transmissometer_1",
                 "installed_date": "2023-02-05",
                 "location_long": "Flowthrough seawater system, primary",
@@ -106,7 +107,7 @@
             },
             {
                 "calibration_date": {"unit": "2022-03-31"},
-                "calibration_file": "",
+                "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/05-SeabirdCSTARTransmissometer/SecondaryTransmissometer/",
                 "filename_prefix": "transmissometer_2",
                 "installed_date": "2023-10-18",
                 "location_long": "Flowthrough seawater system,secondary",
@@ -119,37 +120,5 @@
         ],
         "label": "",
         "soi_device": "transmissometer"
-    },
-    {
-        "installations": [
-            {
-                "calibration_date": {"unit": "2022-03-16"},
-                "calibration_file": "",
-                "filename_prefix": "",
-                "installed_date": "2023-05-02",
-                "location_long": "Aft launch tube",
-                "location_short": "aft",
-                "notes": "",
-                "removal_date": "",
-                "serial_numbers": {
-                    "unit": "35821"
-                }
-            },
-            {
-                "calibration_date": {"unit": "2022-02-24"},
-                "calibration_file": "",
-                "filename_prefix": "",
-                "installed_date": "2023-05-15",
-                "location_long": "Foreward launch tube",
-                "location_short": "fwd",
-                "notes": "",
-                "removal_date": "",
-                "serial_numbers": {
-                    "unit": "44486"
-                }
-            }
-        ],
-        "label": "Valeport MiniSVS SSV (Sound Speed Velocimeter)",
-        "soi_device": "minisvs"
     }
 ]
