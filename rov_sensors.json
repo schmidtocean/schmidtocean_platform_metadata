@@ -192,7 +192,7 @@
             }
         ],
         "file_header": "",
-        "filename": "{cruise_id}_ _{num}-%Y-%m-%d.txt",
+        "filename": "{cruise_id}_sb_sprint_{num}-%Y-%m-%d.txt",
         "identifier": [
             " ",
             ""
@@ -338,7 +338,7 @@
             }
         ],
         "file_header": "",
-        "filename": "{cruise_id}_ _{num}-%Y-%m-%d.txt",
+        "filename": "{cruise_id}_sb_altimeter_{num}-%Y-%m-%d.txt",
         "identifier": [
             " ",
             ""
@@ -375,7 +375,7 @@
             }
         ],
         "file_header": "",
-        "filename": "{cruise_id}_sb_ph_{num}-%Y-%m-%d.txt",
+        "filename": "{cruise_id}_sb_ph-%Y-%m-%d.txt",
         "identifier": [
             " ",
             ""
@@ -412,7 +412,7 @@
             }
         ],
         "file_header": "",
-        "filename": "{cruise_id}__{num}-%Y-%m-%d.txt",
+        "filename": "{cruise_id}_m3_{num}-%Y-%m-%d.txt",
         "identifier": [
             " ",
             ""
@@ -430,7 +430,7 @@
         ]
     },
     {
-        "alternative_label": "M3 Sonar",
+        "alternative_label": "",
         "definition": "",
         "example_output": "",
         "fields": [

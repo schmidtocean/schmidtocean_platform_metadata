@@ -5,9 +5,9 @@
                 "calibration_date": {
                     "unit": "2023-08-25"
                 },
-                "calibration_file": "",
+                "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/03-AanderaDissolvedOxygen/",
                 "filename_prefix": "sb_oxygen",
-                "installed_date": "",
+                "installed_date": "2024-01-11",
                 "location_long": "ROV SuBastian",
                 "location_short": "sb",
                 "notes": "",
@@ -24,17 +24,17 @@
         "installations": [
             {
                 "calibration_date": {
-                    "unit": " "
+                    "unit": "2024-01-19"
                 },
-                "calibration_file": "",
+                "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/01-SBE49CTD/",
                 "filename_prefix": "sb_ctd_sbe49",
-                "installed_date": " ",
+                "installed_date": "2024-04-01",
                 "location_long": "ROV SuBastian",
                 "location_short": "sb",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "unit": ""
+                    "unit": "49-0358"
                 }
             }
         ],
@@ -47,9 +47,9 @@
                 "calibration_date": {
                     "unit": "2023-06-07"
                 },
-                "calibration_file": "",
+                "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/05-ValeportUVSVX-Sound Velocity/",
                 "filename_prefix": "sb_ctd_uvsvx",
-                "installed_date": " ",
+                "installed_date": "2024-01-11",
                 "location_long": "ROV SuBastian",
                 "location_short": "sb",
                 "notes": "",
@@ -68,7 +68,7 @@
                 "calibration_date": {
                     "unit": " "
                 },
-                "calibration_file": "",
+                "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/",
                 "filename_prefix": " ",
                 "installed_date": " ",
                 "location_long": "ROV SuBastian",
@@ -89,7 +89,7 @@
                 "calibration_date": {
                     "unit": "2024-05-10"
                 },
-                "calibration_file": "",
+                "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/02-ParoScientificDepth/",
                 "filename_prefix": " ",
                 "installed_date": " ",
                 "location_long": "ROV SuBastian",
@@ -108,17 +108,17 @@
         "installations": [
             {
                 "calibration_date": {
-                    "unit": ""
+                    "Valeport PAA-10LX": "2023-05-30"
                 },
-                "calibration_file": "",
+                "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/",
                 "filename_prefix": " ",
-                "installed_date": " ",
+                "installed_date": "2024-01-11",
                 "location_long": "ROV SuBastian",
                 "location_short": "sb",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "unit": ""
+                     "Valeport PAA-10LX": "53279"
                 }
             }
         ],
