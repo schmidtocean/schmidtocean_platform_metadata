@@ -3,7 +3,7 @@
         "installations": [
             {
                 "calibration_date":  {"unit": "2021-11-22"},
-                "calibration_file": "",
+                "calibration_file": "/MET-Meterology_Calibration_Documents/GillMetpak/Foremast/",
                 "filename_prefix": "mpp_fm",
                 "installed_date": "2023-02-02",
                 "location_long": "Foremast",
@@ -18,6 +18,7 @@
             },
             {
                 "calibration_date":  {"unit": ""},
+                "calibration_file": "/MET-Meterology_Calibration_Documents/GillMetpak/WheelhouseTopStarboard/",
                 "filename_prefix": "mpp_wh_stb",
                 "installed_date": "2024-04-19",
                 "location_long": "Wheelhouse Top Starboard Side",
@@ -38,7 +39,7 @@
         "installations": [
             {
                 "calibration_date":  {"unit": "2021-10-08"},
-                "calibration_file": "",
+                "calibration_file": "/MET-Meterology_Calibration_Documents/02-ParoscientificMet4/",
                 "filename_prefix": "met4_fm",
                 "installed_date": "2023-02-02",
                 "location_long": "Foremast",
@@ -57,7 +58,7 @@
         "installations": [
             {
                 "calibration_date":  {"unit": "2022-04-19"},
-                "calibration_file": "",
+                "calibration_file": "/MET-Meterology_Calibration_Documents/04-BiospericalSurfacePAR/StarboardForemast/",
                 "filename_prefix": "par_fm_stb",
                 "installed_date": "2024-04-24",
                 "location_long": "Foremast - Starboard Side",
@@ -70,7 +71,7 @@
             },
             {
                 "calibration_date":  {"unit": "2022-04-19"},
-                "calibration_file": "",
+                "calibration_file": "/MET-Meterology_Calibration_Documents/04-BiospericalSurfacePAR/PortForemast/",
                 "filename_prefix": "par_fm_port",
                 "installed_date": "2024-04-26",
                 "location_long": "Foremast - Port Side",
@@ -89,7 +90,7 @@
         "installations": [
             {
                 "calibration_date":  {"unit": "2020-12-10"},
-                "calibration_file": "",
+                "calibration_file": "/MET-Meterology_Calibration_Documents/03-EppleyRAD/StarboardForemast/",
                 "filename_prefix": "rad_fm",
                 "installed_date": "2023-02-02",
                 "location_long": "Foremast",
@@ -109,7 +110,7 @@
         "installations": [
             {
                 "calibration_date":  {"unit": "2022-05-28"},
-                "calibration_file": "",
+                "calibration_file": "/MET-Meterology_Calibration_Documents/01-GillWindsonic/",
                 "filename_prefix": "windsonic_fm",
                 "installed_date": "2023-02-02",
                 "location_long": "Foremast",
@@ -128,7 +129,7 @@
         "installations": [
             {
                 "calibration_date":  {"unit": "2022-07-18"},
-                "calibration_file": "",
+                "calibration_file": "/MET-Meterology_Calibration_Documents/06-OSIPrecipitationSensor/",
                 "filename_prefix": "raingauge_fm",
                 "installed_date": "2024-01-01",
                 "location_long": "Foremast",
