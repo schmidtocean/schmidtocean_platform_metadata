@@ -1,0 +1,135 @@
+[
+    {
+        "alternative_label": "Valeport MiniSVS",
+        "definition": "A sound velocity profiler used to measure the speed of sound in water. Each sound velocity measurement is made using a single pulse of sound traveling over a known distance. It uses Valeport's digital time of flight technology to provide accurate, low noise, low resolution data. The miniSVS has RS232 and RS485 output. RS232 data may be taken over cables up to 200 m long, whereas RS485 is suitable for longer cables (up to 1000 m), and allows for multiple addressed units on a single cable. The miniSVS may be optionally supplied with either a pressure or temperature sensor (but not both), and is available in a variety of sizes; 100 mm, 50 mm and 25 mm. It measures sound velocity over the instrument_range 1375-1900 m/s in water temperatures ranging from -5 to +35 degC. It is depth rated to 6000 m. Its accuracy is dependent on the sensor size chosen, and has a resolution of 0.001 m/s.",
+        "example_output": "2023-12-01T21:02:54.793533Z, 1537.366",
+        "fields": [
+            {
+                "accuracy": 0.17,
+                "alternative_label": "Sound Velocity",
+                "description": "",
+                "header_label": "SoundVelocity",
+                "label": "sound_veolocty",
+                "instrument_range": [
+                    1375,
+                    1900
+                ],
+                "resolution": 0.001,
+                "type": "measured",
+                "units": "m/s",
+                "units_long": "Meters per Second",
+                "uri": ""
+            }
+        ],
+        "file_header": "Timestamp,SoundVelocity_m/s",
+        "filename": "{cruise_id}_minisvs_{num}-%Y-%m-%d.txt",
+        "identifier": "L22::TOOL1495",
+        "instrument_type": "Sound Speed Velocimeter",
+        "label": "Valeport MiniSVS SSV (Sound Speed Velocimeter)",
+        "manual_link": "",
+        "parser": "{timestamp:S},{SoundVelocity:g}",
+        "permit_parameters": ["sound veloicty"],
+        "soi_device": "minisvs",
+        "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL1495/"
+    },
+    {
+        "alternative_label": "mbes",
+            "definition": "",
+            "example_output": " ",
+            "fields": [
+                {
+                    "accuracy": "",
+                    "alternative_label": " ",
+                    "description": "",
+                    "header_label": " ",
+                    "label": " ",
+                    "instrument_range": [
+                        
+                    ],
+                    "resolution": "",
+                    "type": " ",
+                    "units": " ",
+                    "units_long": " ",
+                    "uri": ""
+                }
+            ],
+            "file_header": " ",
+            "filename": "{cruise_id}_ _{num}-%Y-%m-%d.txt",
+            "identifier": " ",
+            "instrument_type": "",
+            "label": "",
+            "manual_link": "",
+            "parser": "",
+            "permit_parameters": [""],
+            "soi_device": "",
+            "uri": ""
+    },
+    {
+        
+            "alternative_label": "RDI Workhorse-300 DR-ADCP",
+            "definition": "A direct reading acoustic doppler current profiler (ADCP) with a standard depth rating of 200m with a 6000m-rated case available as an option. 300kHz Broadband signal processing gives high data resolution and a four-beam solution gives an independent error velocity measurement. It operates effectively between temperatures of -5°C and 45°C and has a velocity accuracy of 0.5% of the water velocity ±0.5cm/s.",
+            "example_output": " ",
+            "fields": [
+                {
+                    "accuracy": "",
+                    "alternative_label": " ",
+                    "description": "",
+                    "header_label": " ",
+                    "label": " ",
+                    "instrument_range": [
+                        
+                    ],
+                    "resolution": "",
+                    "type": " ",
+                    "units": " ",
+                    "units_long": " ",
+                    "uri": ""
+                }
+            ],
+            "file_header": " ",
+            "filename": "{cruise_id}_adcp_{num}-%Y-%m-%d.txt",
+            "identifier": "SDN:L22::TOOL0061",
+            "instrument_type": "current profiler",
+            "label": "Teledyne RDI 300kHz Workhorse Monitor direct-reading ADCP",
+            "manual_link": "",
+            "parser": "",
+            "permit_parameters": ["current_speed"],
+            "soi_device": "",
+            "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0061/"
+        
+    },
+    {
+        
+        "alternative_label": "RDI OS-38",
+        "definition": "The workhorse Ocean Surveyor provides long-range current profiling (typical range 800 to 1000m in long-range mode, 520 to 780m in high-resolution mode). This model operates at a 38kHz frequency",
+        "example_output": " ",
+        "fields": [
+            {
+                "accuracy": "",
+                "alternative_label": " ",
+                "description": "",
+                "header_label": " ",
+                "label": " ",
+                "instrument_range": [
+                    
+                ],
+                "resolution": "",
+                "type": " ",
+                "units": " ",
+                "units_long": " ",
+                "uri": ""
+            }
+        ],
+        "file_header": " ",
+        "filename": "{cruise_id}_adcp_{num}-%Y-%m-%d.txt",
+        "identifier": "SDN:L22::TOOL0747",
+        "instrument_type": "current profiler",
+        "label": "Teledyne RDI Ocean Surveyor 38kHz ADCP",
+        "manual_link": "",
+        "parser": "",
+        "permit_parameters": ["current_speed"],
+        "soi_device": "",
+        "uri": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0747/"
+    
+}
+]

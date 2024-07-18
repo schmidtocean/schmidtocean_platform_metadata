@@ -1,0 +1,34 @@
+[
+    {
+        "installations": [
+            {
+                "calibration_date": {"unit": "2022-03-16"},
+                "calibration_file": "/SVX-Sound_Velocity_Sensor_Calibration_Documents/02-ValeportMiniSVS/MiniSVSAFT/",
+                "filename_prefix": "minissvs_aft",
+                "installed_date": "2023-05-02",
+                "location_long": "Aft launch tube",
+                "location_short": "aft",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": "35821"
+                }
+            },
+            {
+                "calibration_date": {"unit": "2022-02-24"},
+                "calibration_file": "/SVX-Sound_Velocity_Sensor_Calibration_Documents/02-ValeportMiniSVS/MiniSVSFWD/",
+                "filename_prefix": "minisvs_fwd",
+                "installed_date": "2023-05-15",
+                "location_long": "Foreward launch tube",
+                "location_short": "fwd",
+                "notes": "",
+                "removal_date": "",
+                "serial_numbers": {
+                    "unit": "44486"
+                }
+            }
+        ],
+        "label": "Valeport MiniSVS SSV (Sound Speed Velocimeter)",
+        "soi_device": "minisvs"
+    }
+]
