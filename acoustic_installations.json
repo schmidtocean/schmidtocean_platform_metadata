@@ -15,16 +15,16 @@
                 }
             },
             {
-                "calibration_date": {"unit": "2022-02-24"},
+                "calibration_date": {"unit": "2022-03-16"},
                 "calibration_file": "/SVX-Sound_Velocity_Sensor_Calibration_Documents/02-ValeportMiniSVS/MiniSVSFWD/",
                 "filename_prefix": "minisvs_fwd",
-                "installed_date": "2023-05-15",
+                "installed_date": "2024-07-15",
                 "location_long": "Foreward launch tube",
                 "location_short": "fwd",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "unit": "44486"
+                    "unit": "74006"
                 }
             }
         ],
