@@ -3,36 +3,36 @@
         "installations": [
             {
                 "calibration_date": {
-                    "sbe38": "2022-03-03",
-                    "sbe45": "2022-05-15"
+                    "sbe38": "2024-02-01",
+                    "sbe45": "2024-02-16"
                 },
                 "calibration_file": ["/USW-Underway_Seawater_Sensor_Calibration_Documents/01-SBE45Thermosalinograph/TSG1/","/USW-Underway_Seawater_Sensor_Calibration_Documents/02-SBE38ExternalTemperature/TSG1/"],
                 "filename_prefix": "tsg_sbe45_1",
-                "installed_date": "2023-12-01",
+                "installed_date": "2024-08-17",
                 "location_long": "Flowthrough seawater system, primary",
                 "location_short": "1",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "sbe38": "0680",
-                    "sbe45": "0800"
+                    "sbe38": "1301",
+                    "sbe45": "0402"
                 }
             },
             {
                 "calibration_date": {
-                    "sbe38": "2022-03-03",
-                    "sbe45": "2022-05-03"
+                    "sbe38": "2024-02-01",
+                    "sbe45": "2024-02-29"
                 },
                 "calibration_file": ["/USW-Underway_Seawater_Sensor_Calibration_Documents/01-SBE45Thermosalinograph/TSG2/","/USW-Underway_Seawater_Sensor_Calibration_Documents/02-SBE38ExternalTemperature/TSG2/"],
                 "filename_prefix": "tsg_sbe45_2",
-                "installed_date": "2023-12-01",
+                "installed_date": "2024-08-17",
                 "location_long": "Flowthrough seawater system, secondary",
                 "location_short": "2",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "sbe38": "0655",
-                    "sbe45": "0799"
+                    "sbe38": "1302",
+                    "sbe45": "0421"
                 }
             }
         ],
@@ -42,29 +42,29 @@
     {
         "installations": [
             {
-                "calibration_date": {"unit": "2022-03-01"},
+                "calibration_date": {"unit": "2024-02-25"},
                 "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/03-WetlabsFluorometer/FLNT1/",
                 "filename_prefix": "fluorometer_1",
-                "installed_date": "2023-12-01",
+                "installed_date": "2024-08-17",
                 "location_long": "Flowthrough seawater system, primary",
                 "location_short": "1",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "unit": "4906"
+                    "unit": "7473"
                 }
             },
             {
-                "calibration_date": {"unit": "2022-04-01"},
+                "calibration_date": {"unit": "2024-02-25"},
                 "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/03-WetlabsFluorometer/FLNT2/",
                 "filename_prefix": "fluorometer_2",
-                "installed_date": "2023-12-01",
+                "installed_date": "2024-08-17",
                 "location_long": "Flowthrough seawater system, secondary",
                 "location_short": "2",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "unit": "7472"
+                    "unit": "7493"
                 }
             }
         ],
@@ -93,16 +93,16 @@
     {
         "installations": [
             {
-                "calibration_date": {"unit": "2022-04-08"},
+                "calibration_date": {"unit": "2024-01-25"},
                 "calibration_file": "/USW-Underway_Seawater_Sensor_Calibration_Documents/05-SeabirdCSTARTransmissometer/PrimaryTransmissometer/",
                 "filename_prefix": "transmissometer_1",
-                "installed_date": "2023-02-05",
+                "installed_date": "2024-08-17",
                 "location_long": "Flowthrough seawater system, primary",
                 "location_short": "1",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "unit": "2187"
+                    "unit": "1817DR"
                 }
             },
             {
