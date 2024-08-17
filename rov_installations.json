@@ -17,7 +17,7 @@
                 }
             }
         ],
-        "label": "",
+        "label": "Aanderaa 4831 oxygen optode",
         "soi_device": "sb_oxygen"
     },
     {
@@ -38,7 +38,7 @@
                 }
             }
         ],
-        "label": "",
+        "label": "Sea-Bird SBE 49 FastCAT CTD",
         "soi_device": "sb_ctd_sbe49"
     },
     {
@@ -59,7 +59,7 @@
                 }
             }
         ],
-        "label": "",
+        "label": "Valeport uvSVX",
         "soi_device": "sb_ctd_uvsvx"
     },
     {
@@ -101,7 +101,7 @@
                 }
             }
         ],
-        "label": "",
+        "label": "Paroscientific Digiquartz depth sensors 8000",
         "soi_device": "sb_paro"
     },
     {
