@@ -17,6 +17,17 @@
                 }
             }
         ],
+        "not_installed":[
+        {
+            "calibration_date": {
+                "unit": "2024-04-11"
+            },
+            "notes": "defect",
+            "serial_numbers": {
+                "unit": "1111"
+            }
+        }
+    ],
         "label": "Aanderaa 4831 oxygen optode",
         "soi_device": "sb_oxygen"
     },
@@ -34,31 +45,55 @@
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                    "unit": "49-0711"
+                    "unit": "49-0384"
                 }
             }
         ],
+        "not_installed":[ {
+            "calibration_date": {
+                "unit": "2024-07-11"
+            },
+            "notes": "",
+            "serial_numbers": {
+                "unit": "49-0711"
+            }
+        },
+        {
+            "calibration_date": {
+                "unit": "2024-01-19"
+            },
+            "notes": "sent for calibration",
+            "serial_numbers": {
+                "unit": "49-0358"
+            }
+        }
+    ],
         "label": "Sea-Bird SBE 49 FastCAT CTD",
         "soi_device": "sb_ctd_sbe49"
     },
     {
         "installations": [
-            {
-                "calibration_date": {
-                    "unit": "2023-06-07"
-                },
-                "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/05-ValeportUVSVX-Sound Velocity/",
-                "filename_prefix": "sb_ctd_uvsvx",
-                "installed_date": "2024-01-11",
-                "location_long": "ROV SuBastian",
-                "location_short": "sb",
-                "notes": "",
-                "removal_date": "",
-                "serial_numbers": {
-                    "unit": "81173PTSA1014192"
-                }
-            }
+
         ],
+        "not_installed":[ {
+            "calibration_date": {
+                "unit": "2023-06-07"
+            },
+            "notes": "defect",
+            "serial_numbers": {
+                "unit": "81173"
+            }
+        },
+        {
+            "calibration_date": {
+                "unit": "2024-06-24"
+            },
+            "notes": "sent for calibration",
+            "serial_numbers": {
+                "unit": "91895"
+            }
+        }
+    ],
         "label": "Valeport uvSVX",
         "soi_device": "sb_ctd_uvsvx"
     },
@@ -91,7 +126,7 @@
                 },
                 "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/02-ParoScientificDepth/",
                 "filename_prefix": " ",
-                "installed_date": " ",
+                "installed_date": "2024-10-16",
                 "location_long": "ROV SuBastian",
                 "location_short": "sb",
                 "notes": "",
@@ -101,6 +136,18 @@
                 }
             }
         ],
+         "not_installed":[ 
+                    {
+                    "calibration_date": {
+                        "unit": "2024-03-15"
+                    },
+                    "notes": "defect",
+                    "serial_numbers": {
+                        "unit": "160625"
+                    }
+                 }  
+        ]
+    ,
         "label": "Paroscientific Digiquartz depth sensors 8000",
         "soi_device": "sb_paro"
     },
@@ -108,21 +155,32 @@
         "installations": [
             {
                 "calibration_date": {
-                    "Valeport PAA-10LX": "2023-05-30"
+                    "unit": "2024-05-28"
                 },
                 "calibration_file": "/ROV-SuBastian_Sensor_Calibration_Documents/",
                 "filename_prefix": " ",
-                "installed_date": "2024-01-11",
+                "installed_date": "2024-10-11",
                 "location_long": "ROV SuBastian",
                 "location_short": "sb",
                 "notes": "",
                 "removal_date": "",
                 "serial_numbers": {
-                     "Valeport PAA-10LX": "53279"
+                     "unit": "52572"
                 }
             }
         ],
-        "label": "",
-        "soi_device": "sb_sprint"
+         "not_installed":[ 
+                    {
+                    "calibration_date": {
+                        "unit": "2023-05-30"
+                    },
+                    "notes": "sent for calibration",
+                    "serial_numbers": {
+                        "unit": "53279"
+                    }
+                 }  
+        ],
+        "label": "Valeport Mini IPS",
+        "soi_device": "sb_miniips"
     }
 ]

@@ -468,5 +468,41 @@
         "uri": [
             ""
         ]
+    },
+    {
+        "alternative_label": "",
+        "definition": "",
+        "example_output": "",
+        "fields": [
+            {
+                "accuracy": "±0.01%",
+                "alternative_label": " ",
+                "description": "The Valeport miniIPS Intelligent Pressure Sensor is designed to measure water pressure and provide a real time output of that data. The sensor includes a high accuracy (0.01%), temperature compensated piezo-resistive pressure transducer",
+                "header_label": "Pressure_psia",
+                "instrument_range": [
+                
+                ],
+                "label": "",
+                "resolution": "0.001%",
+                "type": "measured",
+                "units": "PSIa",
+                "units_long": "Pressure",
+                "uri": ""
+            }
+        ],
+        "file_header": "",
+        "filename": "{cruise_id}_sb_miniips__{num}-%Y-%m-%d.txt",
+        "identifier": "",
+        "instrument_type": "pressure",
+        "label": "Valeport Mini IPS",
+        "manual_link": " ",
+        "parser": "",
+        "permit_parameters": [
+            "pressure"
+        ],
+        "soi_device": "sb_miniips",
+        "uri": [
+            ""
+        ]
     }
 ]

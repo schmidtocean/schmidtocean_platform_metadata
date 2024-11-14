@@ -32,6 +32,35 @@
                 }
             }
         ],
+        "not_installed":[ 
+           {
+            "calibration_date":  {"unit": "2017-04-24"},
+            "notes": "defect",
+            "serial_numbers": {
+                "anemometer": "13220094",
+                "bracket": "13220006",
+                "hydroclip": "2006934"
+            }
+        }, 
+         {
+            "calibration_date":  {"unit": "2015-11-08"},
+            "notes": "defect",
+            "serial_numbers": {
+                "anemometer": "15190077",
+                "bracket": "15330002",
+                "hydroclip": "61223081"
+            }
+        }, 
+        {
+           "calibration_date":  {"unit": " "},
+           "notes": "in storage",
+           "serial_numbers": {
+               "anemometer": "15190078",
+               "bracket": "15330001",
+               "hydroclip": "20470456"
+           }
+       }
+        ],
         "label": "Gill MetPak Pro Weather Station",
         "soi_device": "mpp"
     },
@@ -83,13 +112,26 @@
                 }
             }
         ],
+        "not_installed":[
+            {
+           "calibration_date":  {"unit": "2022-04-19"},
+           "notes": "in storage",
+           "serial_numbers": {"unit":"20431"}
+        },
+        {
+            "calibration_date":  {"unit": "2022-04-19"},
+            "notes": "Lost at sea",
+            "serial_numbers": {"unit":"20430"}
+         }
+        ],
         "label": "Biospherical Instruments QSR 2200 surface reference radiometer",
         "soi_device": "par"
     },
     {
         "installations": [
             {
-                "calibration_date":  {"unit": "2020-12-10"},
+                "calibration_date":  {"IR Radiometer": "2020-12-10",
+                                "Pyranometer": "2020-12-10"},
                 "calibration_file": "/MET-Meterology_Calibration_Documents/03-EppleyRAD/StarboardForemast/",
                 "filename_prefix": "rad_fm",
                 "installed_date": "2023-02-02",
@@ -100,6 +142,18 @@
                 "serial_numbers": {
                     "IR Radiometer": "389613",
                     "Pyranometer": "38990F3"
+                }
+            }
+        ],
+        "not_installed":[
+            {
+                "calibration_date":  {"IR Radiometer": "2022-02-15",
+                    "Pyranometer": "2022-02-16"},
+                "notes": "in storage",
+                "removal_date": "",
+                "serial_numbers": {
+                    "IR Radiometer": "38581F3",
+                    "Pyranometer": "38597F3"
                 }
             }
         ],
@@ -122,6 +176,13 @@
                 }
             }
         ],
+        "not_installed":[{
+            "calibration_date":  {"unit": "2021-05-11"},
+            "notes":"in storage",
+            "serial_numbers": {
+                    "unit": "21200078"
+                }
+        }],
         "label": "Gill Windsonic anemometer",
         "soi_device": "windsonic"
     },
