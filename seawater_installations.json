@@ -36,6 +36,25 @@
                 }
             }
         ],
+        "not_installed":[
+            { "calibration_date": {
+            "sbe38": "2022-03-03",
+            "sbe45": "2022-05-03"
+              },
+             "serial_numbers": {
+            "sbe38": "0655",
+            "sbe45": "0799"
+            }
+        }, { "calibration_date": {
+            "sbe38": "2022-03-03",
+            "sbe45": "2022-05-03"
+            },
+             "serial_numbers": {
+            "sbe38": "0680",
+            "sbe45": "0800"
+            }
+        }
+    ],
         "label": "Sea-Bird SBE-45 TSG (Thermosalinograph)",
         "soi_device": "tsg_sbe45"
     },
@@ -68,6 +87,22 @@
                 }
             }
         ],
+        "not_installed":[
+            {
+                "calibration_date": {"unit": "2022-04-01"},
+                "notes": "sent for calibration",
+                "serial_numbers": {
+                    "unit": "7472"
+                }
+            },
+            {
+                "calibration_date": {"unit": "2022-03-01"},
+                "notes": "sent for calibration",
+                "serial_numbers": {
+                    "unit": "4906"
+                }
+            }
+        ],
         "label": "WET Labs ECO FL Fluorometer",
         "soi_device": "fluorometer"
     },
@@ -86,6 +121,15 @@
                     "unit": "AP0013"
                 }
             }
+        ],
+        "not_installed":[
+            {
+            "calibration_date": { "unit": "2022-4-26"},
+            "notes": "sent for calibration",
+            "serial_numbers": {
+                "unit": "AP0036"
+            }
+         }
         ],
         "label": "Sunburst AFT pH",
         "soi_device": "pH"
@@ -117,6 +161,29 @@
                     "unit": "2186"
                 }
             }
+        ],
+        "not_installed":[
+            {
+                "calibration_date": { "unit": "2024-01-24"},
+                "notes": "storage",
+                "serial_numbers": {
+                    "unit": "1476DR"
+                }
+             },
+             {
+                "calibration_date": { "unit": "2022-02-08"},
+                "notes": "defect",
+                "serial_numbers": {
+                    "unit": "2178"
+                }
+             },
+             {
+                "calibration_date": { "unit": "2022-04-08"},
+                "notes": "sent for calibration",
+                "serial_numbers": {
+                    "unit": "2187"
+                }
+             }
         ],
         "label": "",
         "soi_device": "transmissometer"
